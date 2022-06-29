@@ -1,10 +1,12 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: yangyuan personal page
+author: Yuan Yang
+email: messiyuan16@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The website if the personal page of Dr. Yuan Yang. His main research
+  fields include the Numerical methods for quantum many-body system,
+  the machine learning methods to study quantum systems and financial systems,
+  cross studying of quantum computing and financial research.
+  and the multi-factor models in quantitative finance.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,23 +14,23 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
+  name: Yuan Yang
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
   dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  portfolio_image: "assets/yangyuan_photo.jpg" # the path from the base directory of the site to the image to display (no / at the start)
   html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
   condensed_mobile:
-    #- home
+    - home
     - page
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
-    github:  samarsault
-    linkedIn: in/samarsault
+    #twitter: samarsault
+    github:  yangyuan16
+    #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
