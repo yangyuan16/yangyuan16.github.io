@@ -1,0 +1,43 @@
+I"�<p>Dr. Yang’s research fields of interest include the <a href="https://en.wikipedia.org/wiki/Tensor_network">tensor network</a>, 
+<a href="https://en.wikipedia.org/wiki/Many-body_problem">quantum many-body system</a>,
+<a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>, 
+<a href="https://en.wikipedia.org/wiki/Quantum_machine_learning">quantum machine learning</a>, 
+<a href="https://en.wikipedia.org/wiki/Quantum_computing">quantum computing</a>, 
+<a href="">quantitative investment in finance</a>, 
+application of quantum computing in finance,
+and multi-factors asset pricing models.</p>
+
+<h3 id="paper-list">paper list</h3>
+<blockquote>
+  <p>Reentrance of the topological phase in a spin-1 frustrated Heisenberg chain
+<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.045133">PHYSICAL REVIEW B 101, 045133 (2020)</a>
+<em>Yuan Yang</em>, Shi-Ju Ran, Xi Chen, Zheng-Zhi Sun, Shou-Shu Gong, Zhengchuan Wang, and Gang Su</p>
+</blockquote>
+
+<blockquote>
+  <p>Visualizing quantum phases and identifying quantum phase transitions by nonlinear dimensional reduction 
+<a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.075106">PHYSICAL REVIEW B 103, 075106 (2021)</a>
+<em>Yuan Yang</em>, Zheng-Zhi Sun, Shi-Ju Ran, and Gang Su</p>
+</blockquote>
+
+<blockquote>
+  <p>Phase identification in many-body systems by virtual configuration binarization
+<a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.013313">PHYSICAL REVIEW E 103, 013313 (2021)</a>
+<em>Yuan Yang</em>, Zhengchuan Wang, Shi-Ju Ran, and Gang Su</p>
+</blockquote>
+
+<blockquote>
+  <p>Trimer superfluid and supersolid on two-dimensional optical lattices
+<a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.033613">PHYSICAL REVIEW A 91, 033613 (2015)</a>
+Wanzhou Zhang, <em>Yuan Yang</em>, Lijuan Guo, Chengxiang Ding, and Tony C. Scott</p>
+</blockquote>
+
+<h3 id="open-source-codes-contribution">open source codes contribution</h3>
+<blockquote>
+  <p><a href="https://github.com/yangyuan16/QSvisualization">Q-TSNE</a> algorithm to visualize the quantum many-body states.</p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://github.com/open-assetpricing-china/stock-predictors">Open source asset pricing in chinese stocks’ market</a></p>
+</blockquote>
+:ET
