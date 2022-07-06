@@ -22,7 +22,7 @@ I use the blog Template  [leopard](http://leopardpan.cn)
 ### Use this repository to build your personal bolg
 >* Clone this repository: $ git clone https://github.com/yangyuan16/yangyuan16.github.io
 
->* Delete all the *.md files in the folder '_posts/'
+>* Delete all the *.md files in the folder '_posts/' and add your *.md files
 
 >* Modify the '_config.yml' 
 
