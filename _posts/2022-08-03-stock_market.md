@@ -21,4 +21,11 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
-###
+### Machine Learning
+> As out-of-sample R^2 has some limitations for model selection, 
+> we analyze the models' <font color=red>conditional predictive ability</font> using a 
+> statistical test recently developed in <font color=red>Li, Liao and Quaedvlieg (2020)</font>,
+> which allows us to compare the performance of machine learning methods 
+> in different macroeconomic environments. 
+>(R^2 并不能作为衡量所有机器学习模型的一个普适的指标。Li, Liao, Quaedvlieg 发展出的
+>方法能够评价机器学习在宏观经济环境中的表现！！！)   
