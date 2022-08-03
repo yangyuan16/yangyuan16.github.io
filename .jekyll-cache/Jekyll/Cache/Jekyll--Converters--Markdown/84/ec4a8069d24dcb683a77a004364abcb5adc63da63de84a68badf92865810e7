@@ -1,0 +1,56 @@
+I"�<h3 id="predictors">predictors</h3>
+<blockquote>
+  <p>Contrasting previous studies for the U.S. market, <font color="red">liquidity</font> emerges as the
+most important predictor, leading us to examine the impact of <font color="red">transaction costs</font> closely.
+Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.</p>
+</blockquote>
+
+<h3 id="retail-investors">retail investors</h3>
+<blockquote>
+  <p>The retail investors’ dominating presence positively affects <font color="red">short-term predictability</font>, 
+particularly for <font color="red"> small stocks </font>. 
+Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.
+===========================
+Chinese stock market is dominated by retail investors. The <font color="red">speculative</font> 
+and short-term trading motives of many retail investors may lead to 
+increased <font color="red">turnover</font>.</p>
+  <ul>
+    <li>According to the 2019 yearbook of the Shanghai Stock Exchange, there are 214.5 million
+  investors in china, 213.8 million are <font color="red">individual investors</font>, and 0.7 million are
+      <font color="red">institutional investors</font>
+      <p>.</p>
+    </li>
+    <li>the value of shares traded stood at 224% of <font color="red">market capitalization</font>
+in 2019, compared to 108% for the U.S. market.</li>
+  </ul>
+
+  <p>Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.</p>
+</blockquote>
+
+<h3 id="large-stocks-and-state-owned-enterprises">large stocks and state-owned enterprises</h3>
+<blockquote>
+  <p>Another feature that distinguishes the Chinese from the U.S. market is the high 
+predictability of large stocks and state-owned enterprises over longer horizons. 
+The out-of-sample performance remains economically significant 
+after <font color="red"> transaction costs</font>.
+Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.</p>
+</blockquote>
+
+<h3 id="market-size">market size</h3>
+<blockquote>
+  <p>As of October 2020, the total value of China’s stock market has climbed to 
+a record high of more than $10 trillion, as the country’s accelerating economic 
+recovery from the pandemic has surpassed the previous high reached during an 
+equity bubble five years ago, making it the second-largest in the 
+world, after the U.S. at nearly $39 trillion.
+Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.</p>
+</blockquote>
+
+<h3 id="three-key-features-in-chinese-market">Three key features in chinese market</h3>
+<blockquote>
+  <p>Chinese stock market is dominated by retail investors.<br />
+The <font color="red">speculative</font> and short-term trading motives of many
+retail investors may lead to increased <font color="red">turnover</font></p>
+
+</blockquote>
+:ET
