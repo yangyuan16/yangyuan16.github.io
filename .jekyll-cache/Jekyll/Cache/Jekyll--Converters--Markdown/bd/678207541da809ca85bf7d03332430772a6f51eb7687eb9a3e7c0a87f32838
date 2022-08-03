@@ -3,6 +3,6 @@
 
 <h1 id="code">Code</h1>
 <blockquote>
-  <p>$ get clone https://github.com/open-assetpricing-china/stock-predictors.git</p>
+  <p>$ git clone https://github.com/open-assetpricing-china/stock-predictors.git</p>
 </blockquote>
 :ET
