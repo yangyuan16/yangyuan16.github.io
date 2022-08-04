@@ -5,6 +5,21 @@ description: summary of some view points, questions, inspirations, ...
 tag: Quantitative Analysis
 ---
 
+### Chinese stock market
+>There are two types of shares in the mainland China stock market, A-shares and B-shares. A-shares are quoted
+only in <font color=red>renminbi</font>, while B-shares are quoted in foreign currencies, such as the U.S. dollar, and are available to foreign
+investors on a larger scale. Foreign investors may have difficulties accessing A-shares due to Chinese <font color=red>government
+regulations</font>, and Chinese investors may have difficulties accessing B-shares, mainly for currency exchange reasons.
+Some companies choose to <font color=red>list</font> their shares in both the A-share and B-share markets. 
+>According to public information, the Wind database serves more than 90% of Chinese financial 
+>institutions and 70% of <font color=red>Qualified Foreign Institutional
+Investors (QFII)</font> operating in China.
+>中国大陆股市有两种股票，A股和B股。A股仅以人民币报价，而B股则以外币报价，如美国，并向外国投资者提供更大规模的服务。
+>由于中国政府的监管，外国投资者可能难以获得A股，而中国投资者可能无法获得B股，主要是因为货币兑换的原因。
+>一些公司选择在A股和B股市场上市。
+>根据公开信息，Wind数据库服务于90%以上的中国金融机构和70%在中国运营的合格外国机构投资者（QFII）。 
+
+
 ### For Asset pricing
 >Against this background, we ask whether, in such a market, <font color=red> technical indicators from collectivistic investment behavior </font> 
 >matter more for asset pricing than <font color=red>firm fundamentals</font>.
@@ -21,6 +36,9 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
+
+
+
 ### Machine Learning
 > As out-of-sample R^2 has some limitations for model selection, 
 > we analyze the models' <font color=red>conditional predictive ability</font> using a 
@@ -30,7 +48,8 @@ fiexible methods are required to account for the Chinese market's specificity.
 >(R^2 并不能作为衡量所有机器学习模型的一个普适的指标。Li, Liao, Quaedvlieg 发展出的
 >方法能够评价机器学习在宏观经济环境中的表现！！！)   
 >
->### Predictors Classification
+
+### Predictors Classification
 > (1) related to market liquidity
 >
 > (2) related to fundamental factors like valuation ratios (pe, eps, ep, roe)
