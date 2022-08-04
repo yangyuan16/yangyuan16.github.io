@@ -48,6 +48,25 @@ fiexible methods are required to account for the Chinese market's specificity.
 >(R^2 并不能作为衡量所有机器学习模型的一个普适的指标。Li, Liao, Quaedvlieg 发展出的
 >方法能够评价机器学习在宏观经济环境中的表现！！！)   
 >
+> We follow the standard approach in the literature 
+> for <font color=red>hyperparameters selection</font>, <font color=red>model estimation</font>, 
+> and <font color=red> performance evaluation </font>. 
+> See, e.g., [Gu et al. (2020b)](https://doi.org/10.1093/rfs/hhaa009) 
+> and [De Nard et al. (2020)](https://doi.org/10.1002/for.2859).
+>
+> In particular, we divide our data into three disjoint time periods while
+> maintaining the temporal ordering: 
+> the <font color=red>training sample (2000-2008)</font>, the <font color=red>validation sample (2009-2011)</font>, and 
+> the <font color=red>testing sample (2012-2020)</font>. 
+> The <font color=red>validation sample</font> is used to for optimizing the hyperparameters of our models.
+> The testing sample contains the next twelve months of data right after the validation sample. 
+> Meanwhile, both the validation sample and the one-year testing period are <font color=red>kept rolling forward</font>
+> to include the next twelve months.
+>
+> We use the training sample to estimate the model parameters subject to some
+> pre-specified hyperparameters for a specific machine learning model 
+> (我们使用训练样本来估计特定机器学习模型的模型参数，这些参数受一些预先指定的超参数的约束。)
+>
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
 ### Predictors Classification
@@ -59,6 +78,14 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 > (4) interaction terms between stock-level characteristics and the eleven macroeconomic predictors.
 > Using the Kronecker product:
->
+>![](http://yangyuan16.github.io//images/posts/Quantitative_analysis/kron_predictors.jpg)
 >
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
+
+### Empirical analysis
+> (1) We start by exploring our models' prediction performance via out-of-sample
+> predictive <font color=red>R^2</font> and discuss <font color =red>predictability</font> 
+> across different subsamples of our data.
+>
+> #### Out-of-sample predictability
+> * As in [Gu et al. (2020b)](https://doi.org/10.1093/rfs/hhaa009).
