@@ -1,0 +1,31 @@
+I".<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading paper <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine Learning in Chinese Stock Market</a></p>
+</blockquote>
+
+<h3 id="main-results">Main results</h3>
+<blockquote>
+  <p>(1) Neutral networks robustly outperform other methods in terms of 
+out-of-sample R^2</p>
+
+  <p>(2) The out-of-sample R^2 are particularly large for the subsamples 
+of <font color="red">small firms</font> and non-state-owned firms. Hence,
+predictability is more significant for those subsamples of stocks in which <font color="red">retail traders</font> plays a much bigger role.</p>
+
+  <p>(3) Comparing the out-of-sample R^2 with studies in the U.S. market, 
+the Chinese market reveals substantially more predictability.</p>
+</blockquote>
+
+<h3 id="other-results">other results</h3>
+<blockquote>
+  <p>We also find that predictability of SOEs (国有企业) in terms of out-of-sample predictive R^2 
+is <font color="red">weaker</font> than for <font color="red">non-SOEs</font> at 
+a <font color="red">monthly prediction horizon</font>, which confirms the SOE’s reputation of 
+being <font color="red">non-transparent</font> (国企的声誉并不透明).</p>
+</blockquote>
+
+<h3 id="methods">Methods</h3>
+<blockquote>
+  <p>(1) observe the market liquidity</p>
+</blockquote>
+:ET
