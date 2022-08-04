@@ -48,10 +48,17 @@ fiexible methods are required to account for the Chinese market's specificity.
 >(R^2 并不能作为衡量所有机器学习模型的一个普适的指标。Li, Liao, Quaedvlieg 发展出的
 >方法能够评价机器学习在宏观经济环境中的表现！！！)   
 >
+>Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
 ### Predictors Classification
 > (1) related to market liquidity
 >
 > (2) related to fundamental factors like valuation ratios (pe, eps, ep, roe)
 >
-> (3)
+> (3) industry dummy variables. 
+>
+> (4) interaction terms between stock-level characteristics and the eleven macroeconomic predictors.
+> Using the Kronecker product:
+>
+>
+>Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
