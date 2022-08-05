@@ -1,0 +1,134 @@
+I"�<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading paper <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine Learning in Chinese Stock Market</a></p>
+</blockquote>
+
+<h3 id="main-results">Main results</h3>
+<blockquote>
+  <p>(1) Neutral networks robustly outperform other methods in terms of 
+out-of-sample R^2</p>
+
+  <p>(2) The out-of-sample R^2 are particularly large for the subsamples 
+of <font color="red">small firms</font> and non-state-owned firms. Hence,
+predictability is more significant for those subsamples of stocks in which <font color="red">retail traders</font> plays a much bigger role.</p>
+
+  <p>(3) Comparing the out-of-sample R^2 with studies in the U.S. market, 
+the Chinese market reveals substantially more predictability.</p>
+
+  <p>(4) out-of-sample predictability.</p>
+
+  <p>(5) unconditional and conditional predictive ability test.</p>
+
+  <p>(6) explores whether predictability translates into portfolio gains.</p>
+
+</blockquote>
+
+<h3 id="other-results">other results</h3>
+<blockquote>
+  <p>We also find that predictability of SOEs (国有企业) in terms of out-of-sample predictive R^2 
+is <font color="red">weaker</font> than for <font color="red">non-SOEs</font> at 
+a <font color="red">monthly prediction horizon</font>, which confirms the SOE’s reputation of 
+being <font color="red">non-transparent</font> (国企的声誉并不透明).</p>
+
+  <p>Our results indicate that also that a long-only portfolio can provide substantial and, 
+even after including transaction costs, economically signicant performance
+(我们的结果还表明，一个只做多的投资组合可以提供实质性的、甚至包括交易成本在内的经济显著的业绩 )</p>
+</blockquote>
+
+<h3 id="methods-and-data">Methods and Data</h3>
+<h4 id="methods">Methods</h4>
+<ul>
+  <li>
+    <p>(1) Apply the empirical design of Gu et al. (2020b) to the Chinese market.</p>
+  </li>
+  <li>
+    <p>(2) linear models:</p>
+    <blockquote>
+      <p>ordinary least squares regression (OLS)</p>
+
+      <p>partial least squares (PLS)</p>
+
+      <p>least absolute shrinkage and selection operator (LASSO)</p>
+
+      <p>elastic net (Enet)</p>
+
+      <p>gradient boosted regression trees (GBRT)</p>
+
+      <p>random forest (RF)</p>
+
+      <p>variable subsample aggregation (VASA)</p>
+
+      <p>neutral networks with only 5 layers (NN1 - NN5)</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h4 id="data">Data</h4>
+<ul>
+  <li>
+    <p>(1) WIND</p>
+  </li>
+  <li>
+    <p>(2) CSMAR</p>
+  </li>
+  <li>
+    <p>(3) Predictors: <a href="https://doi.org/10.1093/rfs/hhx019">Green et al. 2017</a>.
+The characteristic that provide independent information about average US monthly stock return.
+A large collection of stock-level predictive characteristic based on the variable definitions in
+the original literature listed in <a href="https://doi.org/10.1093/rfs/hhx019">Green et al. 2017</a>, 
+and the literature on China-specific factors.</p>
+  </li>
+</ul>
+
+<h4 id="data-process">Data process</h4>
+<ul>
+  <li>(1) classify predictors
+    <blockquote>
+      <p>90 * 1 vector of stock-level characteristics, 11 * 1 vector of macroeconomic predictors,
+80 * 1 vector of dummy variables</p>
+    </blockquote>
+  </li>
+  <li>(2) interaction term between two groups of predictors
+    <blockquote>
+      <p>Using <font color="red">Kronecker product</font> (直乘) to represent the interaction terms 
+between stock-level characteristics and the eleven macroeconomic predictors:
+<img src="http://yangyuan16.github.io//images/posts/Quantitative_analysis/kron_predictors.jpg" alt="" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h3 id="empirical-analysis">Empirical analysis</h3>
+
+<ul>
+  <li>
+    <p>We start exploring our models’ prediction performance via out-of-sample 
+predictive \(R^2\) and discuss predictability across different subsamples of our data.</p>
+  </li>
+  <li>
+    <p>Tables:</p>
+    <blockquote>
+      <p><img src="http://yangyuan16.github.io//images/posts/Quantitative_analysis/ML_ch_table1.jpg" alt="" /></p>
+      <ul>
+        <li>将样本进行 SOEs 和 non-SOEs 分类的原因：
+As state-owned enterprises (SOEs) play an prominent in China’s capital markets and are
+often criticized for information transparency, we explore the R^2 for both SOEs and 
+non-SOEs.</li>
+        <li>
+          <p>将样本进行 70% - 30% 分割的原因：<a href="https://doi.org/10.1016/j.jfineco.2019.03.008">As Liu et al. (2019)</a> 
+argue, the samllest 30% of firms often serve as potential shells in reverse 
+mergers that circumvent tight IPO constraints. (正如Liu等人（2019年）所说，最小的30%的公司通常是潜在
+的规避严格IPO约束的反向合并中的空壳 ) At the same time, Chinese retail investors have a
+notorious preference for investing in small stocks, in particular growth and 
+glamour stocks.(与此同时，中国散户投资者对小型股的投资偏好很强，尤其是增长型和魅力型股票 )</p>
+        </li>
+        <li>OLS model: OLS model achieves a positive R^2 of 0.81%, showing even the simplest model
+still has some predictive power. The R^2 for OLS-3 is slightly lower than that for OLS
+(0.77% v.s. 0.81%), indicating the three covariates alone (size, book-to-market, and
+momentum) are insufficient to account for all predictive power in linear models. <font color="red">It is 
+noteworthy that the OLS model performs much better in China's stock market than 
+in the U.S. stock market </font></li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+:ET
