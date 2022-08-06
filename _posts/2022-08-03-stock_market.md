@@ -89,3 +89,9 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 > #### Out-of-sample predictability
 > * As in [Gu et al. (2020b)](https://doi.org/10.1093/rfs/hhaa009).
+> #### <font color=red>如何证明树模型能够检验出 predictors 之间复杂的非线性相互作用 </font>：
+> * (The distribution of macroeconomic variable importance for tree models GBRT and RF is relatively more 
+uniform than other regression-based methods, indicating these two methods can detect potentially complicated 
+nonlinear interactions between macroeconomic variables and stock characteristics)
+与其他基于回归的方法相比，<font color=red>树模型GBRT和RF的宏观经济变量重要性分布相对更加均匀</font>，
+表明这两种方法可以检测宏观经济变量和股票特征之间潜在的<font color=red>复杂非线性相互作用</font>.
