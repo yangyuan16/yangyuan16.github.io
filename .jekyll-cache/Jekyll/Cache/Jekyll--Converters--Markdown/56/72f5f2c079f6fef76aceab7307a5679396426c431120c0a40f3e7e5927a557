@@ -1,0 +1,22 @@
+I"�<h3 id="predictors">predictors</h3>
+<blockquote>
+  <p>Contrasting previous studies for the U.S. market, <font color="red">liquidity</font> emerges as the
+most important predictor, leading us to examine the impact of <font color="red">transaction costs</font> closely.</p>
+
+  <p>This finding is in contrast to previous studies in the U.S. market (Gu et al. 2020b), where classical trend indicators are the main drivers of predictability. However, we 
+nd notable differences across models. (这一发现与之前在美国市场的研究（Gu等人，2020b）形成对比，在美国市场，经典趋势指标是可预测性的主要驱动因素。然而，我们发现不同模型之间存在显著差异。
+这里 Gu et al .2020b 中采用的也是机器学习模型，说明美国市场中，机器学习模型普遍支持经典趋势指标)</p>
+
+  <p>In particular, in addition to liquidity, neural nets tend to favor momentum and volatility factors over fundamentals.
+(特别是，除了流动性，神经网络倾向于支持动量和波动因素，而不是基本面因素。这说明中国市场中不同的机器学习模型支持的predictors 
+类型是不一样的 )</p>
+
+  <p>这一观察结果与之前应用线性因子模型预测中国股市的文献有很好的共鸣（参见，例如，Li等人（2010年）和Cakici等人（2017年））。
+然而，<font color="red">基本面因素</font>的突出作用令我们惊讶，因为根据 <a href="https://doi.org/10.1093/rfs/hhaa009">顾等人（2020b）</a> 
+的说法，<font color="red">这些因素对美国市场的重要性微乎其微</font>。
+更具体地说，当我们从 <a href="https://doi.org/10.1093/rfs/hhaa009">Gu等人（2020b）</a> 的 figure 5中提取前三（十）个因素时，
+他们在中国市场的平均排名为41（34）。因此，两个市场在预测因素的重要性上存在很大分歧。</p>
+
+  <p>Cite from: <a href="https://doi.org/10.1016/j.jfineco.2021.08.017">Machine-Learning in the Chinese Stock Market</a>.</p>
+</blockquote>
+:ET

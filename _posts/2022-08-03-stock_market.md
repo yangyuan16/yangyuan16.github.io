@@ -36,8 +36,11 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
-
-
+### retailed investors
+>Those individual investors are known to be more short-term oriented and trade speculatively, with
+a contribution of more than 80% of the total trading volume
+>
+>Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
 ### Machine Learning
 > As out-of-sample R^2 has some limitations for model selection, 
@@ -67,6 +70,14 @@ fiexible methods are required to account for the Chinese market's specificity.
 > pre-specified hyperparameters for a specific machine learning model 
 > (我们使用训练样本来估计特定机器学习模型的模型参数，这些参数受一些预先指定的超参数的约束。)
 >
+> We conjecture that such a difference is due to tree models' generic properties as they randomly 
+> choose a subset of stock characteristics when building decision trees. In this way, predictors 
+> like divo, rd, and divi, can become quite influential in some decision trees and thus 
+> become more relevant for the whole tree models, while they play a minor role in all other models.
+> (我们推测，这种差异是由于树模型的泛型属性，因为它们在构建决策树时随机选择股票特征的子集。
+> 这样，像divo、rd和divi这样的预测因子可以在一些决策树中变得相当有影响力，从而与整个树模型更加相关，
+> 而它们在所有其他模型中的作用较小。 )
+>
 >Cite from: [Machine-Learning in the Chinese Stock Market](https://doi.org/10.1016/j.jfineco.2021.08.017).
 
 ### Predictors Classification
@@ -74,9 +85,15 @@ fiexible methods are required to account for the Chinese market's specificity.
 >
 > (2) related to fundamental factors like valuation ratios (pe, eps, ep, roe)
 >
-> (3) industry dummy variables. 
+> (3) related to risk measures (特殊回报波动率，总回报波动率，市场beta)
 >
-> (4) interaction terms between stock-level characteristics and the eleven macroeconomic predictors.
+> (4) related to trend indicators (如：近期最大回报。)
+>
+> (5) related speculative behavior (投机行为)： abnormal turnover ratio (异常换手率)
+>
+> (6) industry dummy variables. 
+>
+> (7) interaction terms between stock-level characteristics and the eleven macroeconomic predictors.
 > Using the Kronecker product:
 >![](http://yangyuan16.github.io//images/posts/Quantitative_analysis/kron_predictors.jpg)
 >
