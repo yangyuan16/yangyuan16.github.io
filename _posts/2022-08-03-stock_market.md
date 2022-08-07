@@ -112,3 +112,6 @@ uniform than other regression-based methods, indicating these two methods can de
 nonlinear interactions between macroeconomic variables and stock characteristics)
 与其他基于回归的方法相比，<font color=red>树模型GBRT和RF的宏观经济变量重要性分布相对更加均匀</font>，
 表明这两种方法可以检测宏观经济变量和股票特征之间潜在的<font color=red>复杂非线性相互作用</font>.
+>
+>
+>
