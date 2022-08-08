@@ -1,0 +1,171 @@
+I"�.<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading paper 
+<a href="http://dx.doi.org/10.1561/104.00000112">Open Source Cross-Sectional Asset Pricing</a></p>
+</blockquote>
+
+<h3 id="main-results">Main results</h3>
+<blockquote>
+  <p>(1) 提供了数据和代码，能够成功的复现出几乎所有的截面股票收益预测因子 
+(provide data and code that successfully reproduces nearly all cross-sectional stock return predictors)</p>
+
+  <p>(2) 我们采用的 391 characteristics 来自于之前的元研究 ，然后比较 t-stats 值
+(Our 319 characteristics draw from previous meta-studies, but we differ by comparing our
+t-stats to the original papers’ results)</p>
+
+  <p>(3) 在原文献中 161 个比较显著的因子，long-short portfolios 的 t-stats &gt; 1.96.
+(For the 161 characteristics that were clearly significant in the original papers,
+98% of out long-short portfolios find t-stats above 1.96)</p>
+
+  <p>(4) 在原文献中 44 个因子的显著性不一致，我们的复现发现 t-stats 的平均值为 2
+(For the 44 characteristics that had mixed evidence, our reproductions find
+t-stats of 2 on average)</p>
+
+  <p>(5) 我们复现出的 t-stats 和原文献 t-stats 拟合的斜率为0.9，R^2 为 83%
+(A regression of reproduced t-stats on original long-short t-stats finds a slope of 
+0.90 and an R^2 of 83%)</p>
+
+  <p>(6) 在特征水平上，预测信号的平均收益是单调的 (Mean returns are monotonic in predictive signals
+at the characteristic level)</p>
+
+  <p>(7) 剩余的 114 个 特征在原始文章中是不显著，其中一部分特征来自于对文章 
+<a href="https://doi.org/10.1093/rfs/hhy131">Hou,Xue,and Zhang (2020)</a> 的修改。
+(The remaining 114 characteristics were insignificant in the original papers or are 
+modifications of the originals created by Hou, Xue, and Zhang(2020) )</p>
+</blockquote>
+
+<h3 id="背景">背景</h3>
+
+<blockquote>
+  <p>(1) 学术金融通过开放合作和封闭竞争的混合发展。在本文中，
+我们试图通过提供一个包含数百个股票回报预测值的“开源数据集”，将文化推向开放合作。</p>
+
+  <p>(2) 开源数据集至关重要，因为最近的研究对整个跨部门资产定价文献的可信度提出了质疑。</p>
+
+  <p>(3) 一系列有影响力的评论认为，这些文献中至少有45%的截面资产定价是错误的
+（Harvey、Liu和Zhu 2016、Linnainma和Roberts 2018、Chordia、Goyal和Saretto 2020）。
+<a href="https://doi.org/10.1093/rfs/hhy131">Hou、Xue和Zhang（2020）</a> 
+更进一步，声称约50%的文献无法复制-即使遵循原始方法</p>
+
+  <p>(4) 这一发现意味着许多文献无法在复制中生存，更不用说重新分析了。
+这些怀疑反映了从医学到管理等其他领域正在发生的信誉危机</p>
+
+</blockquote>
+
+<h3 id="贡献">贡献：</h3>
+<blockquote>
+  <p>(1) 我们的开源数据集为恢复跨部门资产定价的可信度迈出了关键一步。
+它表明，近100%的文献可预测性结果可以重现，包括<a href="https://doi.org/10.1093/rfs/hhy131">侯、薛和张（2020）</a> 
+研究的特征的可预测性。</p>
+
+  <p>(2) 我们的开源数据集为恢复截面资产定价的可信度迈出了关键一步。
+它表明，近100%的文献可预测性结果可以重现，
+包括<a href="https://doi.org/10.1093/rfs/hhy131">侯、薛和张（2020）</a> 研究的100%特征的可预测性。</p>
+
+  <p>(3) 任何有权访问WRDS和Stata的人都可以使用我们的代码自己执行
+这种大规模复制https://github.com/OpenSourceAP/CrossSection.</p>
+
+  <p>(4) 事实上，我们的代码是以用户为中心编写的。代码是模块化的，因此用户可以快速检查特定特性，
+而无需担心大部分代码。代码使用异常处理优雅地移动过去的错误和语义版本控制，使更新易于理解。
+最后，我们承诺每年更新这些数据。我们希望这种开放式合作的展示将激励其他人开放他们的分析，
+并进一步支持学术金融的可信度</p>
+
+  <p>(5) 事实上，<font color="red">缺乏作者提供的数据和代码是张和李引用其复制失败的最常见原因</font>。
+相反，我们根本没有使用作者提供的代码，只是根据原始论文中的文本和展示编写代码。</p>
+
+  <p>(6) 这些结果表明，<font color="red">先前研究（如Dewald、Thursby和Anderson 1986、McCullough、McGeary和Harrison 2006）
+中记录的广泛复制失败可以通过更多的努力来补救</font>。</p>
+
+  <p>(7) 与 <a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> (MP) 相比，我们的复现率很高
+M and P 发现他们的97个 predictor portfolios 中的12% 产生的 t-stats &lt; 1.5. 
+在我们研究的85个预测因子中 （M and P 也研究了这85个因子），其中的 14% lead to t-stats &lt; 1.96,
+这些低 t-stats 的 predictors 来源于 “likely predictors”, <font color="red">值得注意的是我们在这里并不
+认为这是 reproduction failure </font>.</p>
+
+  <p>(8) 我们的结果与 <a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> 
+高度一致。<font color="red"> returns decay post-publication but remain positive </font>,
+和MP一样，我们发现，因子在发布后收益衰减，但仍然为正，并且对于样本中更强的预测因子，这种衰减更强。</p>
+
+  <p>(9) 我们的结果在定量上与<a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> 中的结果相似，
+即使是那些在我们的因子集中的部分子集是 <a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> 未研究的。
+这些结果与以前的论文相呼应，这些论文在更大的预测集合中复现了<a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a>
+的结果 <a href="https://doi.org/10.1093/rapstu/raz011">Chen和Zimmermann 2020</a> ; 
+<a href="https://doi.org/10.1016/j.jfineco.2019.06.004">Jacobs和Müller 2020</a> 。</p>
+
+  <p>(10) 我们的研究证明了之前研究”cross-sectional predictability”的文献中的研究是相当可信的。
+之前的这些研究包括：<font color="red">out-of-sample tests</font> 
+(<a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a>, 
+<a href="https://doi.org/10.1016/j.jfineco.2019.06.004">Jacobs and Müller 2020</a>); <font color="red">multiple-testing 
+adjustments</font> (<a href="https://doi.org/10.1093/rapstu/raz011">Chen and Zimmermann 2020</a>,
+<a href="https://doi.org/10.1111/jofi.13036">Chen 2020</a>, 
+<a href="https://www.nber.org/papers/w28432">Jensen, Kelly, and Pedersen 2021</a> )
+相对于这些论文，我们通过比较reproduction的t-stats和手工收集的t-stats，补充了新的证据，证明cross-sectional文献是极其可复制的。</p>
+
+  <p>(11) 一个重要的警告是，<font color="red">我们没有解决文献是否提供可实施的交易利润这一独特但相关的问题</font>。
+在一篇密切相关的论文中，<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3073681">Chen and Velikov (2019)</a> 的回答是否定的。
+<a href="https://doi.org/10.1093/rfs/hhv063">Novy-Marx and Velikov (2016)</a> , chen 和 Velikov 发现 effective bid-ask spreads wipe out 
+most of the post-publication returns for a large set of anomalies. 
+(大部分情况下，有效的买卖价差消除了大部分异象发布后回报。)</p>
+</blockquote>
+
+<h3 id="方法">方法</h3>
+
+<h4 id="characteristic-selection">Characteristic Selection</h4>
+
+<ul>
+  <li>Table1 PanelA:
+    <blockquote>
+      <p><img src="http://yangyuan16.github.io//images/posts/Quantitative_analysis/OS_CSAP_Table1_panelA.jpg" alt="" /></p>
+      <ul>
+        <li>characteristic 的选择依据于对三个方面的平衡，
+(1) 全面覆盖之前的研究 (comprehensive coverage of previous mata-studies)
+(2) 全面覆盖公司层面的截面预测因子 (comprehensive coverage of firm-level cross sectional predictors)
+(3) 以合理的时间完成高质量的代码和数据 (completion of high quality code and data with a reasonable 
+ amount of economist-hours)</li>
+        <li><a href="https://doi.org/10.1093/rfs/hhy131">Hou、Xue and Zhang（2020）</a> -&gt; 240 predictors</li>
+        <li><a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> +   <a href="https://doi.org/10.1093/rfs/hhx019">Green, Hand, Zhang (2017)</a> -&gt;  49 characteristics</li>
+        <li><a href="https://doi.org/10.1093/rfs/hhv059">Harvey, Liu, and Zhu (2016)</a> -&gt; 30 characteristics in firm-level</li>
+        <li>total of 319 characteristics drawn from 153 papers.</li>
+        <li>我们没有 cover <a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> +   <a href="https://doi.org/10.1093/rfs/hhx019">Green, Hand, Zhang (2017)</a>
+中全部的 characteristics 是因为基于我们的第三个考量也就是在合理的时间完成高质量的代码</li>
+        <li>在添加HLZ（<a href="https://doi.org/10.1093/rfs/hhv059">Harvey, Liu, and Zhu (2016)</a> ）的特征时，
+我们要求在原始文件中明确显示该特征，以预测公司层面的股票回报。选择特征时对公司层面的这一要求
+排除了许多只以投资组合回报为目标的papers, 
+因为只以投资组合回报为目标是20世纪90年代之前资产定价论文的一个普遍特征 (
+<a href="https://doi.org/10.1016/0304-405X(85)90008-X">Chan Chen and Hsieh 1985</a>, 
+<a href="https://www.jstor.org/stable/2352710">Chen Roll and Ross 1986</a> ) 
+并且这在宏观驱动的文章中更常见 (
+<a href="https://doi.org/10.1016/S0304-405X(02)00248-9">Vassalou 2003</a>, 
+<a href="https://doi.org/10.1016/j.jfineco.2006.09.004">Balvers and Huang 2007</a>). 
+这样的考量是来源于我们的第二个目标：covering firm-level predictors.</li>
+        <li>值得注意的是遵循我们第一个目标，我们不要求对<a href="https://doi.org/10.1093/rfs/hhy131">Hou、Xue and Zhang（2020）</a>
+、<a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a>
+或<a href="https://doi.org/10.1093/rfs/hhx019">Green, Hand, Zhang (2017)</a> 的特征<font color="red">具有明确的企业级可预测性</font>。
+因此，纯粹基于原始研究的结果，我们的特征在预测能力上有很大差异。</li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<h4 id="characteristic-construction">Characteristic Construction</h4>
+
+<ul>
+  <li>Table1 PanelB
+    <blockquote>
+      <p><img src="http://yangyuan16.github.io//images/posts/Quantitative_analysis/OS_CSAP_Table1_panelB.jpg" alt="" /></p>
+      <ul>
+        <li>我们尽量紧跟原始文件。我们的目标是 <a href="http://dx.doi.org/10.1561/104.00000082"> Welch (2019) </a> 
+意义上的 <font color="red">"复现" </font> (reproductions), 避免重新评估原始论文的有效性。</li>
+        <li>我们认为 extensions 和 reexamination 需要 focused studies(<a href="">Pontiff and Singla 2019</a>,
+ <a href="">Novy-Marx and Velikov Forthcoming</a> ), 而这并不适合像我们这样大规模的 meta-study.</li>
+        <li>事实上，正如我们很快解释的那样，<font color="red">我们的大规模研究需要偏离原始论文 </font>,
+即使是小规模的研究，完美的复制也是不可能的。WRDS对HML的复制与Ken French的数据具有98.9%的相关性，
+但在特定月份，月收益仍有高达1%的偏差（Vora和Palacios，2010）</li>
+        <li>因此，我们的复现(reproduction)可以更好地描述为<font color="red">"尝试复现"(attempted reproduction)</font>,
+但为了便于阅读，我们通常会在整个文本中删除尝试(attempted)修饰语</li>
+        <li>我们标准化了一些<font color="red">复现流程</font>，以保持文献级结果的透明度以及数据的可用性</li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+:ET
