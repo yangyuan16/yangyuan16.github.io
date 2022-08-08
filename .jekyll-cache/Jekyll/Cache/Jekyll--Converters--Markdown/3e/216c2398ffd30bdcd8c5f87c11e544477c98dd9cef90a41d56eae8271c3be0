@@ -1,0 +1,31 @@
+I"q<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading paper 
+<a href="http://dx.doi.org/10.1561/104.00000112">Open Source Cross-Sectional Asset Pricing</a></p>
+</blockquote>
+
+<h3 id="main-results">Main results</h3>
+<blockquote>
+  <p>(1) 提供了数据和代码，能够成功的复现出几乎所有的截面股票收益预测因子 
+(provide data and code that successfully reproduces nearly all cross-sectional stock return predictors)</p>
+
+  <p>(2) 我们采用的 391 characteristics 来自于之前的元研究 ，然后比较 t-stats 值
+(Our 319 characteristics draw from previous meta-studies, but we differ by comparing our
+t-stats to the original papers’ results)</p>
+
+  <p>(3) 在原文献中 161 个比较显著的因子，long-short portfolios 的 t-stats &gt; 1.96.
+(For the 161 characteristics that were clearly significant in the original papers,
+98% of out long-short portfolios find t-stats above 1.96)</p>
+
+  <p>(4) 在原文献中 44 个因子的显著性不一致，我们的复现发现 t-stats 的平均值为 2
+(For the 44 characteristics that had mixed evidence, our reproductions find
+t-stats of 2 on average)</p>
+
+  <p>(5) 我们复现出的 t-stats 和原文献 t-stats 拟合的斜率为0.9，R^2 为 83%
+(A regression of reproduced t-stats on original long-short t-stats finds a slope of 
+0.90 and an R^2 of 83%)</p>
+
+  <p>(6)</p>
+
+</blockquote>
+:ET

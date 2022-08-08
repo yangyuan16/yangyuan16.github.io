@@ -1,0 +1,83 @@
+I"�<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading paper 
+<a href="http://dx.doi.org/10.1561/104.00000112">Open Source Cross-Sectional Asset Pricing</a></p>
+</blockquote>
+
+<h3 id="main-results">Main results</h3>
+<blockquote>
+  <p>(1) 提供了数据和代码，能够成功的复现出几乎所有的截面股票收益预测因子 
+(provide data and code that successfully reproduces nearly all cross-sectional stock return predictors)</p>
+
+  <p>(2) 我们采用的 391 characteristics 来自于之前的元研究 ，然后比较 t-stats 值
+(Our 319 characteristics draw from previous meta-studies, but we differ by comparing our
+t-stats to the original papers’ results)</p>
+
+  <p>(3) 在原文献中 161 个比较显著的因子，long-short portfolios 的 t-stats &gt; 1.96.
+(For the 161 characteristics that were clearly significant in the original papers,
+98% of out long-short portfolios find t-stats above 1.96)</p>
+
+  <p>(4) 在原文献中 44 个因子的显著性不一致，我们的复现发现 t-stats 的平均值为 2
+(For the 44 characteristics that had mixed evidence, our reproductions find
+t-stats of 2 on average)</p>
+
+  <p>(5) 我们复现出的 t-stats 和原文献 t-stats 拟合的斜率为0.9，R^2 为 83%
+(A regression of reproduced t-stats on original long-short t-stats finds a slope of 
+0.90 and an R^2 of 83%)</p>
+
+  <p>(6) 在特征水平上，预测信号的平均收益是单调的 (Mean returns are monotonic in predictive signals
+at the characteristic level)</p>
+
+  <p>(7) 剩余的 114 个 特征在原始文章中是不显著，其中一部分特征来自于对文章 
+<a href="https://doi.org/10.1093/rfs/hhy131">Hou,Xue,and Zhang (2020)</a> 的修改。
+(The remaining 114 characteristics were insignificant in the original papers or are 
+modifications of the originals created by Hou, Xue, and Zhang(2020) )</p>
+</blockquote>
+
+<h3 id="背景">背景</h3>
+
+<blockquote>
+  <p>(1) 学术金融通过开放合作和封闭竞争的混合发展。在本文中，
+我们试图通过提供一个包含数百个股票回报预测值的“开源数据集”，将文化推向开放合作。</p>
+
+  <p>(2) 开源数据集至关重要，因为最近的研究对整个跨部门资产定价文献的可信度提出了质疑。</p>
+
+  <p>(3) 一系列有影响力的评论认为，这些文献中至少有45%的截面资产定价是错误的
+（Harvey、Liu和Zhu 2016、Linnainma和Roberts 2018、Chordia、Goyal和Saretto 2020）。
+<a href="https://doi.org/10.1093/rfs/hhy131">Hou、Xue和Zhang（2020）</a> 
+更进一步，声称约50%的文献无法复制-即使遵循原始方法</p>
+
+  <p>(4) 这一发现意味着许多文献无法在复制中生存，更不用说重新分析了。
+这些怀疑反映了从医学到管理等其他领域正在发生的信誉危机</p>
+
+</blockquote>
+
+<h3 id="贡献">贡献：</h3>
+<blockquote>
+  <p>(1) 我们的开源数据集为恢复跨部门资产定价的可信度迈出了关键一步。
+它表明，近100%的文献可预测性结果可以重现，包括<a href="https://doi.org/10.1093/rfs/hhy131">侯、薛和张（2020）</a> 
+研究的特征的可预测性。</p>
+
+  <p>(2) 我们的开源数据集为恢复截面资产定价的可信度迈出了关键一步。
+它表明，近100%的文献可预测性结果可以重现，
+包括<a href="https://doi.org/10.1093/rfs/hhy131">侯、薛和张（2020）</a> 研究的100%特征的可预测性。</p>
+
+  <p>(3) 任何有权访问WRDS和Stata的人都可以使用我们的代码自己执行
+这种大规模复制https://github.com/OpenSourceAP/CrossSection.</p>
+
+  <p>(4) 事实上，我们的代码是以用户为中心编写的。代码是模块化的，因此用户可以快速检查特定特性，
+而无需担心大部分代码。代码使用异常处理优雅地移动过去的错误和语义版本控制，使更新易于理解。
+最后，我们承诺每年更新这些数据。我们希望这种开放式合作的展示将激励其他人开放他们的分析，
+并进一步支持学术金融的可信度</p>
+
+  <p>(5) 事实上，<font color="red">缺乏作者提供的数据和代码是张和李引用其复制失败的最常见原因</font>。
+相反，我们根本没有使用作者提供的代码，只是根据原始论文中的文本和展示编写代码。</p>
+
+  <p>(6) 这些结果表明，<font color="red">先前研究（如Dewald、Thursby和Anderson 1986、McCullough、McGeary和Harrison 2006）
+中记录的广泛复制失败可以通过更多的努力来补救</font>。</p>
+
+  <p>(7) 与 <a href="https://doi.org/10.1111/jofi.12365">MCLean and Pontiff (2016)</a> (MP) 相比，我们的复现率很高
+M and P 发现他们的97个 predictor portfolios 中的12% 产生的 t-stats &lt; 1.5.</p>
+
+</blockquote>
+:ET
