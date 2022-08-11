@@ -1,0 +1,33 @@
+I"4
+<ul>
+  <li><a href="#abstract">Abstract</a></li>
+  <li><a href="#main-results">Main results</a></li>
+  <li><a href="#背景">背景</a></li>
+  <li><a href="#贡献">贡献：</a></li>
+  <li><a href="#方法">方法</a>
+    <ul>
+      <li><a href="#characteristic-selection">Characteristic Selection</a></li>
+      <li><a href="#characteristic-construction">Characteristic Construction</a></li>
+      <li><a href="#portfolio-construction">Portfolio Construction</a></li>
+      <li><a href="#predictability-categories">Predictability Categories</a></li>
+    </ul>
+  </li>
+  <li><a href="#literature-level-reproduction-performance">Literature-Level Reproduction Performance</a>
+    <ul>
+      <li><a href="#success-of-predictor-reproductions">Success of Predictor Reproductions</a></li>
+      <li><a href="#not-predictors-indirect-signals-and-comparison-with-other-meta-studies">Not-Predictors, Indirect Signals, and Comparison with Other Meta-Studies</a></li>
+    </ul>
+  </li>
+  <li><a href="#characteristic-level-reproduction-performance">Characteristic-Level Reproduction Performance</a>
+    <ul>
+      <li><a href="#which-predictors-are-clear-likely-or-not-which-are-indirect-signals">Which Predictors Are “Clear”, “Likely”, or “Not”? Which are “Indirect Signals”</a></li>
+    </ul>
+  </li>
+  <li><a href="#reproduction-failures-and-struggles">Reproduction Failures and Struggles</a></li>
+  <li><a href="#extremely-strong-predictors">Extremely Strong Predictors</a></li>
+  <li><a href="#additional-evidence-of-dataset-quality">Additional Evidence of Dataset Quality</a></li>
+  <li><a href="#peformance-by-liquidity-adjustment">Peformance by Liquidity Adjustment</a></li>
+  <li><a href="#performance-by-rebalancing-frequency">Performance by Rebalancing Frequency</a></li>
+  <li><a href="#conclusion">Conclusion</a></li>
+</ul>
+:ET
