@@ -1,0 +1,43 @@
+I"�<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading papers</p>
+  <ul>
+    <li>[Replicating Anomalies](https://doi.org/10.1093/rfs/hhy131 by Hou Xue Zhang.</li>
+    <li></li>
+  </ul>
+
+</blockquote>
+
+<h3 id="replicating-anomalies">Replicating Anomalies</h3>
+
+<h4 id="概述">概述</h4>
+
+<blockquote>
+  <ul>
+    <li>Most anomalies fail to hold up to currently acceptable standards for 
+empirical finance.With microcaps mitigated via NYSE breakpoints and 
+value-weighted returns, 65% of the 452 anomalies in our extensive data library, 
+including 96% of the trading frictions category, cannot clear the single test 
+hurdle of the absolute t-value of 1.96. Imposing the higher multiple test hurdle of 
+2.78 at the 5% significance level raises the failure rate to 82%.
+Even for replicated anomalies, their economic magnitudes are 
+much smaller than originally reported. 
+In all, capital markets are more efficient than previously recognized. 
+(大多数反常现象都达不到目前可接受的经验金融标准。
+通过纽约证券交易所的断点和价值加权回报缓解了微小企业，
+我们广泛的数据库中的452个异常中有65%，包括96%的交易摩擦类别，
+无法清除绝对t值为1.96的单一测试障碍。在5%显著性水平下施加更高的多重测试障碍2.78，
+将失败率提高到82%。<font color="red">即使是重复的异象，它们的经济规模也比最初报告的要小得多。
+总的来说，资本市场的效率比以前公认的要高</font>。)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Our key finding is that most anomalies fail to replicate, 
+falling short of currently acceptable standards for empirical finance.
+()</li>
+  </ul>
+
+</blockquote>
+:ET
