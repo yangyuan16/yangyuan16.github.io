@@ -1,0 +1,126 @@
+I"�"<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading papers</p>
+  <ul>
+    <li><a href="https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/f/575/files/2020/07/EmpiricalCSAP.pdf">Empirical Cross-Sectional 
+Asset Pricing</a></li>
+    <li><a href=""></a></li>
+  </ul>
+
+</blockquote>
+
+<h3 id="empircal-cross-sectional-asset-pricing">Empircal Cross-Sectional Asset Pricing</h3>
+
+<h4 id="概述">概述</h4>
+
+<blockquote>
+  <ul>
+    <li>It is a <font color="red">fundamental question of financial economics 
+whether assets with different risk exposures and characteristics are priced 
+to earn different rates of return</font>. 
+I survey studies in empirical cross-sectional asset pricing that provide evidence 
+on this question and relate the evidence to models of investor preferences and beliefs. 
+I begin by laying out a framework that will be helpful for categorizing 
+and interpreting empirical work in this area.
+(<font color="red">金融经济学的一个基本问题是，对
+不同风险敞口和特征的资产的定价能够获得不同的回报率</font>。
+我调查了在实证横截面资产定价方面的研究，
+这些研究为这个问题提供了证据，<font color="red">并将证据与投资者偏好和信念模型联系起来</font>。
+我首先列出一个框架，这将有助于对这一领域的实证工作进行分类和解释。)</li>
+    <li>Stochastic discount factor (SDF): 随机贴现因子，The <font color="red">law of one price</font> 
+implies that a stochastic discount factor (SDF) exists such that (1) holds, 
+and it can be constructed as a linear combination of the asset payoffs [Hansen and Richard (1987]).
+(可以被构造为资产收益的线性组合。) 
+Researchers often look to enrich the specification of investors’ preferences 
+or the dynamics of risks to enhance the pricing performance of models
+(<font color="red">研究人员通常希望丰富投资者偏好或风险动态的specification，
+以提高模型的定价性能</font>)</li>
+    <li>Sentiment (<font color="red"> 情绪 </font>): 
+Since the boundary between rational theories and sentiment approaches is fuzzy,
+I refrain from using the somewhat simplistic categorization 
+of cross-sectional asset-pricing studies into “rational” and “irrational”, 
+or “behavioral,” approaches. (<font color="red">我用“情绪”这个标签来描述这种预期的形成。
+由于理性理论和情绪方法之间的界限是模糊的，
+我避免将 cross-sectional 资产定价研究简单分类为“理性”和“非理性”或“行为”方法。</font>)</li>
+    <li>Frictions (摩擦):  Frictions can affect the SDF in several ways. 
+Frictions may prevent participation of some classes of investors 
+in the market. Frictions can also give rise to risks 
+that are of concern to investors, such as liquidity risk. 
+(<font color="red"> 摩擦可以通过多种方式影响SDF。
+摩擦可能会阻碍某些类别的投资者参与市场。
+摩擦还可能引发投资者关注的风险，如流动性风险</font>)
+Frictions also play an important role in the sentiment-based 
+approaches in Section 5 as an explanation as to 
+why sophisticated investors—whose beliefs may be closer to the Bayesian learning 
+or rational-expectations benchmarks may be unable to exploit and 
+eliminate the effects of sentiment on asset prices.
+(<font color="red">摩擦在第5节基于情绪的方法中也起着重要作用，
+这解释了为什么老练的投资人的投资理念可能更接近贝叶斯学习
+或理性预期基准的成熟投资者可能无法利用和消除情绪对资产价格的影响</font>)</li>
+    <li>Data Snooping (数据窥探): 
+One problem that plagues cross-sectional asset pricing is that 
+much of the empirical work in this area is inherently a search for anomalies.
+(<font color="red">困扰cross-sectional资产定价的一个问题是，该领域的许多实证工作本质上是寻找 anomalies</font>).
+When researchers search over a large number 
+of candidate predictors for predictability 
+that is unexplained by standard models of the SDF, 
+it is inevitable that some turn up as “significant” just by pure chance.
+Conventional procedures of statistical inference 
+do not account for this search over many candidate predictors. 
+The <font color="red">out-of-sample tests reviewed in Section 6 can help shed light on this problem</font>.
+(<font color="red">当研究人员在大量候选预测因子中寻找SDF标准模型无法解释的可预测性时，
+不可避免的是，一些预测因子仅仅是偶然出现的“显著性”。
+传统的统计推断程序没有考虑对许多候选预测因子的搜索</font>。第6节中回顾的<font color="red">样本外测试有助于阐明这个问题</font>。).</li>
+    <li>Market efficiency (<font color="red">市场有效性</font>)：
+Empirical work on cross-sectional return predictability 
+is often discussed as the study of market efficiency, 
+but the meaning of this concept is not clearly defined, 
+which limits its usefulness as an organizing principle.
+(<font color="red">关于cross-sectional 可预测性的实证工作经常被讨论为市场效率的研究，
+但这一概念的含义没有明确定义，这限制了其作为 organizing principle 的实用性。</font>).</li>
+    <li>Market efficiency (<font color="red"> 市场有效性 </font>):
+<a href="https://doi.org/10.2307/2325486">Fama (1970)</a> defines a (semi-strongly) efficient market 
+as one that always “fully reflects” 
+all available (public) information, but it is not clear whether “fully reflect” refers to 
+the demanding notion of rational expectations (this is the view taken in Jensen (1978)), 
+or whether the notion of market efficiency should allow 
+for learning and adaptation (Schwert (2003) and Timmermann and Granger (2004) propose 
+this interpretation). 
+Frictions and risks further obscure the precise meaning of market efficiency.
+(<a href="https://doi.org/10.2307/2325486">Fama（1970）</a> <font color="red">将semi-strongly（半强）有效市场定义为始终“充分反映”所有
+可用（公共）信息的市场，但不清楚“完全反映”是否指理性预期的苛刻概念（这是[Jensen（1978）]的观点），
+或者市场效率的概念是否应该允许学习和适应（[Schwert（2003）和Timmermann和Granger（2004）]提出了这种解释）。
+摩擦和风险进一步模糊了市场效率的确切含义</font>).</li>
+    <li>Market efficienty (<font color="red"> 市场有效性 </font>): 
+Jensen (1978) augments his rational-expectations definition of market efficiency by suggesting that market efficiency should be defined 
+as the “absence of profit opportunities” from trading on public information.<br />
+( <a href="https://doi.org/10.1016/0304-405X(78)90025-9">Jensen（1978）</a> 
+通过<font color="red">建议将市场效率定义为公共信息交易中的“无盈利机会”，
+增强了他对市场效率的理性预期定义。</font>)</li>
+    <li>Market efficienty (<font color="red"> 市场有效性 </font>): 
+Yet, in a market in which sophisticated and sentiment-driven investors trade, 
+it is possible that sentiment affects prices, yet sophisticated investors do not 
+perceive any abnormal profit opportunities given the frictions and risks that they face.
+(<font color="red"> 然而，在一个成熟且情绪驱动的投资者交易的市场中，情绪可能会影响价格，
+但成熟的投资者在面临摩擦和风险的情况下，不会察觉到任何异常利润机会。 </font>).</li>
+    <li>Market efficienty (<font color="red"> 市场有效性 </font>): 
+If one defines such a market as efficient, 
+efficiency becomes a largely empty concept because it does not distinguish 
+between interesting alternative hypotheses (rational expectations, learning sentiment) 
+of how investors price assets. 
+For these reasons, I prefer to explicitly spell out the belief-formation hypothesis 
+that researchers work with, 
+rather than relying on the imprecise notion of market efficiency.
+(<font color="red"> 如果将这样一个市场定义为有效市场，那么效率在很大程度上就是一个空洞的概念，
+因为它没有区分投资者如何定价资产的有趣的替代假设（理性预期、学习情绪）。
+出于这些原因，我更愿意明确阐述研究人员所使用的信念形成假设，
+而不是依赖于不精确的市场效率概念。 </font>)</li>
+    <li>Cross-Sectional Return Predictability -&gt; <font color="red"> Technical Predictors</font>:
+The history of return and trading volume of a stock is a natural place to look for
+return predictors, and the data are easily accessible. In the practice of
+investment management, predictors of this kind are in the realm of “technical analysis”.
+().</li>
+  </ul>
+</blockquote>
+
+:ET
