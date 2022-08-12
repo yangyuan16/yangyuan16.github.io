@@ -1,4 +1,4 @@
-I"=<h3 id="abstract">Abstract</h3>
+I"!<h3 id="abstract">Abstract</h3>
 <blockquote>
   <p>Notes for reading papers</p>
   <ul>
@@ -35,8 +35,9 @@ Researchers often look to enrich the specification of investors’ preferences
 or the dynamics of risks to enhance the pricing performance of models
 (<font color="red">研究人员通常希望丰富投资者偏好或风险动态的specification，
 以提高模型的定价性能</font>)</li>
-    <li>Sentiment: Since the boundary between rational theories and sentiment approaches is fuzzy,
- I refrain from using the somewhat simplistic categorization 
+    <li>Sentiment (<font color="red"> 情绪 </font>): 
+Since the boundary between rational theories and sentiment approaches is fuzzy,
+I refrain from using the somewhat simplistic categorization 
 of cross-sectional asset-pricing studies into “rational” and “irrational”, 
 or “behavioral,” approaches. (<font color="red">我用“情绪”这个标签来描述这种预期的形成。
 由于理性理论和情绪方法之间的界限是模糊的，
@@ -95,6 +96,25 @@ as the “absence of profit opportunities” from trading on public information.
 ( <a href="https://doi.org/10.1016/0304-405X(78)90025-9">Jensen（1978）</a> 
 通过<font color="red">建议将市场效率定义为公共信息交易中的“无盈利机会”，
 增强了他对市场效率的理性预期定义。</font>)</li>
+    <li>Market efficienty (<font color="red"> 市场有效性 </font>): 
+Yet, in a market in which sophisticated and sentiment-driven investors trade, 
+it is possible that sentiment affects prices, yet sophisticated investors do not 
+perceive any abnormal profit opportunities given the frictions and risks that they face.
+(<font color="red"> 然而，在一个成熟且情绪驱动的投资者交易的市场中，情绪可能会影响价格，
+但成熟的投资者在面临摩擦和风险的情况下，不会察觉到任何异常利润机会。 </font>).</li>
+    <li>Market efficienty (<font color="red"> 市场有效性 </font>): 
+If one defines such a market as efficient, 
+efficiency becomes a largely empty concept because it does not distinguish 
+between interesting alternative hypotheses (rational expectations, learning sentiment) 
+of how investors price assets. 
+For these reasons, I prefer to explicitly spell out the belief-formation hypothesis 
+that researchers work with, 
+rather than relying on the imprecise notion of market efficiency.
+(<font color="red"> 如果将这样一个市场定义为有效市场，那么效率在很大程度上就是一个空洞的概念，
+因为它没有区分投资者如何定价资产的有趣的替代假设（理性预期、学习情绪）。
+出于这些原因，我更愿意明确阐述研究人员所使用的信念形成假设，
+而不是依赖于不精确的市场效率概念。 </font>)</li>
+    <li></li>
   </ul>
 </blockquote>
 
