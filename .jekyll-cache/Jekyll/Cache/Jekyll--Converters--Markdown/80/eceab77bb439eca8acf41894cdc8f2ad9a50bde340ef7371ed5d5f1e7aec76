@@ -1,12 +1,12 @@
-I"5y<h3 id="abstract">Abstract</h3>
+I"C�<h3 id="abstract">Abstract</h3>
 <blockquote>
   <p>Notes for reading papers</p>
   <ul>
     <li><a href="https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/f/575/files/2020/07/EmpiricalCSAP.pdf">Empirical Cross-Sectional 
 Asset Pricing</a></li>
-    <li><a href=""></a></li>
+    <li><a href="https://doi.org/10.1016/j.jfineco.2018.02.012">Choosing Factors</a></li>
+    <li><a href="https://doi.org/10.1016/j.jfineco.2014.10.010">A five-factor asset pricing model</a></li>
   </ul>
-
 </blockquote>
 
 <h3 id="empircal-cross-sectional-asset-pricing">Empircal Cross-Sectional Asset Pricing</h3>
@@ -556,6 +556,63 @@ and q-theory do not answer the question why investors price stocks
 to have these differences in expected returns.
 (盈利能力和投资相关因素的使用是由上述第2.2节和第2.3节中讨论的现值关系和q理论模型推动的。
 当然，必须记住，现值关系和q理论并不能回答投资者为什么对股票定价以获得这些预期回报差异的问题。)</li>
+  </ul>
+</blockquote>
+
+<h3 id="choosing-factors-eugene-f-fama-kenneth-r-french-2018">Choosing factors (<a href="https://doi.org/10.1016/j.jfineco.2018.02.012">Eugene F. Fama, Kenneth R. French, 2018</a>)</h3>
+
+<h4 id="概述-1">概述</h4>
+<blockquote>
+  <h5 id="fama-french-6-factor-models">Fama French 6 factor models</h5>
+  <ul>
+    <li>Our goal is to develop insights about the 
+maximum squared Sharpe ratio for model factors as a metric 
+for ranking asset pricing models. We consider nested and non-nested models. 
+The nested models are the capital asset pricing model, 
+the three-factor model of Fama and French (1993), 
+the five-factor extension in Fama and French (2015), 
+and a six-factor model that adds a momentum factor. 
+The non-nested models examine three issues about factor choice 
+in the six-factor model: 
+(1) cash profitability versus operating profitability as the variable 
+used to construct profitability factors, 
+(2) long-short spread factors versus 
+excess return factors, and 
+(3) factors that use small or big stocks versus factors that use both.
+(<font color="red">我们的目标是深入了解模型因素的最大平方夏普比率，
+作为对资产定价模型进行排名的指标</font>。
+我们考虑嵌套和非嵌套模型。
+嵌套模型是资本资产定价模型、Fama 和 French (1993) 的三因子模型、<font color="red">Fama 
+和 French (2015) 的五因子扩展模型以及添加动量因子的六因子模型</font>。<font color="green">非嵌套模型考察了六因子模型中关于因子选择的三个问题：
+（1）现金盈利能力与经营盈利能力作为构建盈利能力因素的变量，
+（2）多空利差因素与超额收益因素，
+以及（ 3) 使用小股票或大股票的因子与同时使用两者的因子</font>。
+)</li>
+  </ul>
+</blockquote>
+
+<h3 id="a-five-factor-asset-pricing-model-eugene-f-fama-kenneth-r-french-2015">A five-factor asset pricing model (<a href="https://doi.org/10.1016/j.jfineco.2014.10.010">Eugene F. Fama, Kenneth R. French, 2015</a>)</h3>
+
+<h4 id="概述-2">概述</h4>
+<blockquote>
+  <h5 id="fama-french-5-factor-model">Fama French 5-factor model</h5>
+  <ul>
+    <li>A five-factor model directed at capturing the size, value, profitability, 
+and investment patterns in average stock returns performs better than 
+the three-factor model of Fama and French (FF, 1993). 
+The five-factor model׳s main problem is its failure to capture 
+the low average returns on small stocks whose returns behave like 
+those of firms that invest a lot despite low profitability. 
+The model׳s performance is not sensitive to the way its factors are defined. 
+With the addition of profitability and investment factors, 
+the value factor of the FF three-factor model becomes redundant 
+for describing average returns in the sample we examine.
+(五因素模型旨在捕捉股票平均回报中的<font color="red">规模、价值、盈利能力和投资模式</font>，
+其性能优于 Fama 和 French 的三因素模型（FF，1993 年）。<font color="red">五因素模型的主要问题是
+它未能捕捉到小型股票的低平均回报，
+这些股票的回报表现类似于尽管盈利能力低但投资很多的公司。
+该模型的性能对其因子的定义方式不敏感。随着盈利能力和投资因素的加入，
+FF 三因素模型的价值因素对于描述我们检查的样本中的平均回报变得多余</font>)</li>
   </ul>
 </blockquote>
 :ET
