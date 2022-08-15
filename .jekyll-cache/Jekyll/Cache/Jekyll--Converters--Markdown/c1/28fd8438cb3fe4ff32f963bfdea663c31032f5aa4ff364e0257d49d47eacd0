@@ -1,67 +1,63 @@
----
-layout: post 
-title:  Recent Progress in Quantum Finance. 
-description:    
-tag: Quantum Finance
----
-
-### Abstract
-> New development in Quantum Finance  
-> * [Quantum computational quantitative trading: 
+I"�_<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>New development in Quantum Finance</p>
+  <ul>
+    <li><a href="https://iopscience.iop.org/article/10.1088/1367-2630/ac7f26/meta">Quantum computational quantitative trading: 
 high-frequency statistical arbitrage 
-algorithm](https://iopscience.iop.org/article/10.1088/1367-2630/ac7f26/meta) .  
-> * [Future of Quantum Finance](https://sfmagazine.com/post-entry/january-2022-the-future-of-quantum-in-finance/) .
-> * [How quantum computing could change financial services](https://www.mckinsey.com/industries/financial-services/our-insights/how-quantum-computing-could-change-financial-services) .
-> * [Future Trends in Quantum Finance](https://www.researchgate.net/publication/337306005_Future_Trends_in_Quantum_Finance) . 
-> * [The Probability Flow in the Stock Market and Spontaneous Symmetry 
-Breaking in Quantum Finance](https://doi.org/10.3390/math9212777) .
-> * [A Survey of Quantum Computing for Finance](https://arxiv.org/abs/2201.02773) .
-> * [Fintech Frontiers in Quantum Computing, Fractals, 
+algorithm</a> .</li>
+    <li><a href="https://sfmagazine.com/post-entry/january-2022-the-future-of-quantum-in-finance/">Future of Quantum Finance</a> .</li>
+    <li><a href="https://www.mckinsey.com/industries/financial-services/our-insights/how-quantum-computing-could-change-financial-services">How quantum computing could change financial services</a> .</li>
+    <li><a href="https://www.researchgate.net/publication/337306005_Future_Trends_in_Quantum_Finance">Future Trends in Quantum Finance</a> .</li>
+    <li><a href="https://doi.org/10.3390/math9212777">The Probability Flow in the Stock Market and Spontaneous Symmetry 
+Breaking in Quantum Finance</a> .</li>
+    <li><a href="https://arxiv.org/abs/2201.02773">A Survey of Quantum Computing for Finance</a> .</li>
+    <li><a href="https://doi.org/10.3390/joitmc7010019">Fintech Frontiers in Quantum Computing, Fractals, 
 and Blockchain Distributed Ledger: 
-Paradigm Shifts and Open Innovation](https://doi.org/10.3390/joitmc7010019) .
-> * [Quantum Machine Learning for Finance ICCAD Special Session Paper](https://ieeexplore.ieee.org/abstract/document/9643469) .
-> * [Quantum Computing for Supply Chain Finance](https://ieeexplore.ieee.org/abstract/document/9592468) . 
-> * [A Structured Survey of Quantum Computing for the Financial Industry](https://arxiv.org/abs/2204.10026) . 
-> * [Quantum versus classical generative modelling in finance](https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta) .
-> * [Quantum Computing for Financial Risk Measurement](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4022463) .
-> * [Pricing Multi-Asset Derivatives by Finite-Difference Method on a Quantum Computer](https://ieeexplore.ieee.org/abstract/document/9618807) .
-> * []() .
-
-
-#### Quantum computational quantitative trading: 
-high-frequency statistical arbitrage 
-algorithm
-> ##### 概述 
-> * 
-Quantitative trading is an integral part of financial markets 
+Paradigm Shifts and Open Innovation</a> .</li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9643469">Quantum Machine Learning for Finance ICCAD Special Session Paper</a> .</li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9592468">Quantum Computing for Supply Chain Finance</a> .</li>
+    <li><a href="https://arxiv.org/abs/2204.10026">A Structured Survey of Quantum Computing for the Financial Industry</a> .</li>
+    <li><a href="https://iopscience.iop.org/article/10.1088/2058-9565/abd3db/meta">Quantum versus classical generative modelling in finance</a> .</li>
+    <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4022463">Quantum Computing for Financial Risk Measurement</a> .</li>
+    <li><a href="">Pricing Multi-Asset Derivatives by Finite-Difference Method on a Quantum Computer</a>
+      <h4 id="quantum-computational-quantitative-trading">Quantum computational quantitative trading:</h4>
+      <p>high-frequency statistical arbitrage 
+algorithm</p>
+      <h5 id="概述">概述</h5>
+    </li>
+    <li>Quantitative trading is an integral part of financial markets 
 with high calculation speed requirements, while no quantum algorithms 
-have been introduced into this field yet. <font color=red>
+have been introduced into this field yet. <font color="red">
 We propose quantum algorithms for high-frequency statistical arbitrage trading 
 by utilizing variable time condition number estimation and 
 quantum linear regression</font>. 
 The algorithm complexity has been reduced from the 
-classical benchmark O(N2d) to $O(\sqrt{dN}{\kappa }_{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$, 
+classical benchmark O(N2d) to $O(\sqrt{dN}{\kappa }<em>{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$, 
 where N is the length of trading data, and 
 d is the number of stocks, κ0 is the condition number and epsilon is the 
 desired precision. Moreover, two tool algorithms for condition number estimation 
 and cointegration test are developed.
 (量化交易是金融市场不可分割的组成部分，
-对计算速度要求很高，但目前还没有量子算法引入该领域。<font color=red>
+对计算速度要求很高，但目前还没有量子算法引入该领域。<font color="red">
 我们利用可变时间条件数估计和量子线性回归提出了高频统计套利交易的量子算法</font>。
-算法复杂度已从经典基准O ( N 2 d ) 降低到$O(\sqrt{dN}{\kappa }_{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$，
+算法复杂度已从经典基准O ( N 2 d ) 降低到$O(\sqrt{dN}{\kappa }</em>{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$，
 其中N是交易数据的长度，d是股票数量，κ 0是条件数，ε是所需的精度。
-此外，还开发了两种用于条件数估计和协整检验的工具算法。) 
+此外，还开发了两种用于条件数估计和协整检验的工具算法。)</li>
+  </ul>
+</blockquote>
 
-#### Future of Quantum Finance
->##### 概述
-> * Many problems in finance center on optimization issues, 
+<h4 id="future-of-quantum-finance">Future of Quantum Finance</h4>
+<blockquote>
+  <h5 id="概述-1">概述</h5>
+  <ul>
+    <li>Many problems in finance center on optimization issues, 
 and the authors note, “These are tasks which are particularly 
 hard for classical computers but find a natural formulation 
 using quantum optimization methods. In recent years, 
 this field has known a tremendous growth, partly due to the 
 commercial availability of quantum annealers.” Quantum annealing is a 
 computing method that provides a way to find solutions 
-when the problems can present large numbers of solutions. <font color=red>
+when the problems can present large numbers of solutions. <font color="red">
 The authors point out that quantum annealers can be used to 
 optimize portfolios, find arbitrage opportunities, and perform credit scoring</font>.
 (金融中的许多问题都集中在优化问题上，
@@ -69,12 +65,16 @@ optimize portfolios, find arbitrage opportunities, and perform credit scoring</f
 但可以使用量子优化方法找到一个自然的公式。
 近年来，该领域取得了巨大的增长，部分原因是量子退火炉的商业可用性。
 ” 量子退火是一种计算方法，当问题可以呈现大量解决方案时，
-它提供了一种找到解决方案的方法。<font color=red>作者指出，量子退火器可用于优化投资组合、
-寻找套利机会和进行信用评分</font>。)
+它提供了一种找到解决方案的方法。<font color="red">作者指出，量子退火器可用于优化投资组合、
+寻找套利机会和进行信用评分</font>。)</li>
+  </ul>
+</blockquote>
 
-#### The Probability Flow in the Stock Market and Spontaneous Symmetry Breaking in Quantum Finance
->##### 概述
-> * The spontaneous symmetry breaking phenomena applied to Quantum Finance considers 
+<h4 id="the-probability-flow-in-the-stock-market-and-spontaneous-symmetry-breaking-in-quantum-finance">The Probability Flow in the Stock Market and Spontaneous Symmetry Breaking in Quantum Finance</h4>
+<blockquote>
+  <h5 id="概述-2">概述</h5>
+  <ul>
+    <li>The spontaneous symmetry breaking phenomena applied to Quantum Finance considers 
 that the martingale state in the stock market corresponds to 
 a ground (vacuum) state if we express the financial equations 
 in the Hamiltonian form. The original analysis for this phenomena completely 
@@ -93,12 +93,15 @@ way powerful tools for analyzing the dynamic of the stock markets.
 对这种现象的原始分析完全忽略了势项最小值附近的动力学项。
 这在大多数情况下是正确的。然而，当我们处理鞅条件时，发现动力学项也可以表现为势项，
 然后再现真空有效位置的变化（鞅）。
-在本文中，我们分析了这些特殊情况下有效的对称破缺模式和相关的真空简并。)
+在本文中，我们分析了这些特殊情况下有效的对称破缺模式和相关的真空简并。)</li>
+  </ul>
+</blockquote>
 
-
-#### A Survey of Quantum Computing for Finance
->##### 概述
->* Quantum computers are expected to surpass the computational capabilities of 
+<h4 id="a-survey-of-quantum-computing-for-finance">A Survey of Quantum Computing for Finance</h4>
+<blockquote>
+  <h5 id="概述-3">概述</h5>
+  <ul>
+    <li>Quantum computers are expected to surpass the computational capabilities of 
 classical computers during this decade and have transformative impact on 
 numerous industry sectors, particularly finance. 
 In fact, finance is estimated to be the first industry sector to benefit 
@@ -124,11 +127,15 @@ for future research.
 我们还讨论了这些算法在具有各种硬件实现的近期量子计算机上的可行性，
 并展示了它们如何与金融领域的广泛用例相关联。
 我们希望这篇文章不仅可以作为学术研究人员和行业从业者的参考，
-也可以为未来的研究提供新的思路。)
+也可以为未来的研究提供新的思路。)</li>
+  </ul>
+</blockquote>
 
-#### Fintech Frontiers in Quantum Computing, Fractals, and Blockchain Distributed Ledger: Paradigm Shifts and Open Innovation
-> ##### 概述
-> * Among the hot research topics, 
+<h4 id="fintech-frontiers-in-quantum-computing-fractals-and-blockchain-distributed-ledger-paradigm-shifts-and-open-innovation">Fintech Frontiers in Quantum Computing, Fractals, and Blockchain Distributed Ledger: Paradigm Shifts and Open Innovation</h4>
+<blockquote>
+  <h5 id="概述-4">概述</h5>
+  <ul>
+    <li>Among the hot research topics, 
 Fintech is leading the trend in terms of the newest technology applications. 
 The relatively new emerging paradigms in various sciences, 
 such as geometry (fractals), physics (quantum), 
@@ -160,11 +167,15 @@ consolidating their dominance
 正在决定经济范式明显大转变所确定的革命的快速连续性。
 不断增长的计算能力和越来越强大的预测软件的开发正在导致一个具有竞争力、
 极其动态和具有挑战性的系统。在这种情况下，正如历史所表明的那样，市场集中的可能性很高，
-然而，只有少数公司——数字巨头——有能力开发这些技术，巩固它们的主导地位。)
+然而，只有少数公司——数字巨头——有能力开发这些技术，巩固它们的主导地位。)</li>
+  </ul>
+</blockquote>
 
-#### Quantum Machine Learning for Finance ICCAD Special Session Paper
-> ##### 概述
-> * Quantum computers are expected to surpass the computational capabilities 
+<h4 id="quantum-machine-learning-for-finance-iccad-special-session-paper">Quantum Machine Learning for Finance ICCAD Special Session Paper</h4>
+<blockquote>
+  <h5 id="概述-5">概述</h5>
+  <ul>
+    <li>Quantum computers are expected to surpass the computational capabilities 
 of classical computers during this decade, and achieve disruptive impact 
 on numerous industry sectors, particularly finance. 
 In fact, finance is estimated to be the first industry sector to 
@@ -176,12 +187,16 @@ with particular focus to those use cases that can be solved via Machine Learning
 并对众多行业产生颠覆性影响，尤其是金融领域。
 事实上，金融估计是第一个从量子计算中受益的行业，不仅在中长期，
 甚至在短期内。这篇评论论文介绍了用于金融应用的量子算法的最新技术，
-特别关注那些可以通过机器学习解决的用例。).
->
+特别关注那些可以通过机器学习解决的用例。).</li>
+  </ul>
 
-#### Quantum Computing for Supply Chain Finance
-> ##### 概述
-> * Applying quantum computing to real world applications to assess the potential 
+</blockquote>
+
+<h4 id="quantum-computing-for-supply-chain-finance">Quantum Computing for Supply Chain Finance</h4>
+<blockquote>
+  <h5 id="概述-6">概述</h5>
+  <ul>
+    <li>Applying quantum computing to real world applications to assess the potential 
 efficacy is a daunting task for non-quantum specialists. 
 This paper shows an implementation of two quantum optimization algorithms applied 
 to portfolios of trade finance portfolios and compares the selections to 
@@ -202,12 +217,16 @@ and data volumes that quantum offers, will also be applicable to trade finance.
 使用的方法是将贸易金融投资组合的金融风险和回报映射到 Qiskit 教程中开发的量子算法的优化函数。
 结果表明，虽然使用量子算法没有看到任何优势，
 但量子算法的性能在统计上没有显着下降。
-因此，很有希望的是，在未来，随着量子硬件的预期改进，理论上优越的处理速度)
+因此，很有希望的是，在未来，随着量子硬件的预期改进，理论上优越的处理速度)</li>
+  </ul>
+</blockquote>
 
-#### A Structured Survey of Quantum Computing for the Financial Industry
-> ##### 概述
-> * Quantum computers can solve specific problems that are not feasible on 
-"classical" hardware. Harvesting the speed-up provided by quantum computers 
+<h4 id="a-structured-survey-of-quantum-computing-for-the-financial-industry">A Structured Survey of Quantum Computing for the Financial Industry</h4>
+<blockquote>
+  <h5 id="概述-7">概述</h5>
+  <ul>
+    <li>Quantum computers can solve specific problems that are not feasible on 
+“classical” hardware. Harvesting the speed-up provided by quantum computers 
 therefore has the potential to change any industry which uses computation, 
 including finance. First quantum applications for the financial industry 
 involving optimization, simulation, and machine learning problems have already been 
@@ -222,11 +241,15 @@ understand the potential of quantum computing in the financial industry.
 金融行业涉及优化、模拟和机器学习问题的第一个量子应用已经被提出，
 并应用于投资组合管理、风险管理和衍生品定价等用例。
 本调查以结构化的方式回顾了量子计算在金融领域的各种应用的平台、算法、方法和用例。
-本课程面向金融行业的工作人员，旨在全面了解当前的发展和能力，并了解量子计算在金融行业的潜力。)
+本课程面向金融行业的工作人员，旨在全面了解当前的发展和能力，并了解量子计算在金融行业的潜力。)</li>
+  </ul>
+</blockquote>
 
-#### Quantum versus classical generative modelling in finance
-> ##### 概述
-> * Finding a concrete use case for quantum computers in the near 
+<h4 id="quantum-versus-classical-generative-modelling-in-finance">Quantum versus classical generative modelling in finance</h4>
+<blockquote>
+  <h5 id="概述-8">概述</h5>
+  <ul>
+    <li>Finding a concrete use case for quantum computers in the near 
 term is still an open question, 
 with machine learning typically touted as one of the 
 first fields which will be impacted by quantum technologies. 
@@ -254,12 +277,15 @@ Boltzmann machine.
 并且随着模型的扩展表现出卓越的性能。
 TM平台，并且还能够在量子硬件上部分训练迄今为止最大的量子电路 Born 机器实例。
 最后，通过研究训练 Born 机器的纠缠能力，我们发现纠缠通常在问题实例中发挥作用，
-这证明了玻尔兹曼机器的优势). 
+这证明了玻尔兹曼机器的优势).</li>
+  </ul>
+</blockquote>
 
-
-#### Quantum Computing for Financial Risk Measurement
-> ##### 概述
-> * Quantum computing allows a significant speed-up over traditional CPU- and GPU-based 
+<h4 id="quantum-computing-for-financial-risk-measurement">Quantum Computing for Financial Risk Measurement</h4>
+<blockquote>
+  <h5 id="概述-9">概述</h5>
+  <ul>
+    <li>Quantum computing allows a significant speed-up over traditional CPU- and GPU-based 
 algorithms when applied to particular mathematical challenges such as optimisation 
 and simulation. Despite promising advances and extensive research in hard- and software 
 developments, currently available quantum systems are still largely limited 
@@ -283,7 +309,7 @@ with sufficient accuracy, the business case for a move to quantum solutions is
 not very strong at this point.
 (当应用于优化和模拟等特定数学挑战时，量子计算允许比传统的基于CPU和GPU的算法显著提高速度。
 尽管在硬件和软件开发方面取得了有前途的进展和广泛的研究，
-但目前可用的量子系统在很大程度上仍受到其能力的限制。<font color=red>与此相一致，
+但目前可用的量子系统在很大程度上仍受到其能力的限制。<font color="red">与此相一致，
 定量金融的实际应用仍处于初级阶段。
 本文分析了应用于金融机构风险管理的要求和具体方法</font>。
 在市场风险的风险价值和交易对手信用风险的潜在未来敞口的例子中，
@@ -291,15 +317,18 @@ not very strong at this point.
 虽然概念解决方案和小规模电路在现阶段是可行的，但实际应用所需的飞跃仍然是巨大的。
 为了构建一个可用的风险测量系统，硬件容量（以量子位为单位）需要从当前约10^2的值增加几个数量级。
 量子噪声带来了另一个挑战，需要推进对其控制和缓解的研究，以使风险测量应用程序能够在实践中部署。
-总的来说，<font color=red>鉴于成熟的基于模拟的经典方法允许在合理的时间内以足够的精度进行风险计算，
-目前转向量子解决方案的商业理由并不十分充分</font>。)
+总的来说，<font color="red">鉴于成熟的基于模拟的经典方法允许在合理的时间内以足够的精度进行风险计算，
+目前转向量子解决方案的商业理由并不十分充分</font>。)</li>
+  </ul>
+</blockquote>
 
+<h4 id="pricing-multi-asset-derivatives-by-finite-difference-method-on-a-quantum-computer">Pricing Multi-Asset Derivatives by Finite-Difference Method on a Quantum Computer</h4>
+<blockquote>
+  <h5 id="概述-10">概述</h5>
+  <ul>
+    <li>Following the recent great advance of quantum computing technology, there are growing interests in its applications to industries, including finance. In this article, we focus on derivative pricing based on solving the Black–Scholes partial differential equation by the finite-difference method (FDM), which is a suitable approach for some types of derivatives but suffers from the curse of dimensionality , that is, exponential growth of complexity in the case of multiple underlying assets. We propose a quantum algorithm for FDM-based pricing of multi-asset derivative with exponential speedup with respect to dimensionality compared with classical algorithms. The proposed algorithm utilizes the quantum algorithm for solving differential equations, which is based on quantum linear system algorithms. Addressing the specific issue in derivative pricing, that is, extracting the derivative price for the present underlying asset prices from the output state of the quantum algorithm, we present the whole of the calculation process and estimate its complexity. We believe that the proposed method opens the new possibility of accurate and high-speed derivative pricing by quantum computers
+(随着最近量子计算技术的巨大进步，人们对其在金融等行业的应用越来越感兴趣。在本文中，我们专注于基于有限差分法 (FDM) 求解 Black-Scholes 偏微分方程的衍生品定价，该方法适用于某些类型的衍生品，但存在维数灾难，即在多个基础资产的情况下，复杂性呈指数增长。我们提出了一种基于 FDM 的多资产衍生品定价的量子算法，与经典算法相比，该算法在维度方面具有指数加速。所提出的算法利用基于量子线性系统算法的量子算法求解微分方程。解决衍生品定价的具体问题，即从量子算法的输出状态中提取当前标的资产价格的衍生品价格，呈现整个计算过程并估计其复杂度。我们相信，所提出的方法为量子计算机准确和高速的衍生品定价开辟了新的可能性。)</li>
+  </ul>
+</blockquote>
 
-
-#### Pricing Multi-Asset Derivatives by Finite-Difference Method on a Quantum Computer 
->##### 概述
-> * Following the recent great advance of quantum computing technology, there are growing interests in its applications to industries, including finance. In this article, we focus on derivative pricing based on solving the Black–Scholes partial differential equation by the finite-difference method (FDM), which is a suitable approach for some types of derivatives but suffers from the curse of dimensionality , that is, exponential growth of complexity in the case of multiple underlying assets. We propose a quantum algorithm for FDM-based pricing of multi-asset derivative with exponential speedup with respect to dimensionality compared with classical algorithms. The proposed algorithm utilizes the quantum algorithm for solving differential equations, which is based on quantum linear system algorithms. Addressing the specific issue in derivative pricing, that is, extracting the derivative price for the present underlying asset prices from the output state of the quantum algorithm, we present the whole of the calculation process and estimate its complexity. We believe that the proposed method opens the new possibility of accurate and high-speed derivative pricing by quantum computers
-(随着最近量子计算技术的巨大进步，人们对其在金融等行业的应用越来越感兴趣。在本文中，我们专注于基于有限差分法 (FDM) 求解 Black-Scholes 偏微分方程的衍生品定价，该方法适用于某些类型的衍生品，但存在维数灾难，即在多个基础资产的情况下，复杂性呈指数增长。我们提出了一种基于 FDM 的多资产衍生品定价的量子算法，与经典算法相比，该算法在维度方面具有指数加速。所提出的算法利用基于量子线性系统算法的量子算法求解微分方程。解决衍生品定价的具体问题，即从量子算法的输出状态中提取当前标的资产价格的衍生品价格，呈现整个计算过程并估计其复杂度。我们相信，所提出的方法为量子计算机准确和高速的衍生品定价开辟了新的可能性。)
-
-
-
+:ET

@@ -1,0 +1,44 @@
+I"%<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>New development in Quantum Finance</p>
+  <ul>
+    <li><a href="https://iopscience.iop.org/article/10.1088/1367-2630/ac7f26/meta">Quantum computational quantitative trading: 
+high-frequency statistical arbitrage 
+algorithm</a> .</li>
+    <li><a href="https://sfmagazine.com/post-entry/january-2022-the-future-of-quantum-in-finance/">Future of Quantum Finance</a> .</li>
+    <li><a href="https://www.mckinsey.com/industries/financial-services/our-insights/how-quantum-computing-could-change-financial-services">How quantum computing could change financial services</a> .</li>
+    <li><a href="https://www.researchgate.net/publication/337306005_Future_Trends_in_Quantum_Finance">Future Trends in Quantum Finance</a> .</li>
+    <li><a href="https://doi.org/10.3390/math9212777">The Probability Flow in the Stock Market and Spontaneous Symmetry 
+Breaking in Quantum Finance</a> .</li>
+    <li><a href="https://arxiv.org/abs/2201.02773">A Survey of Quantum Computing for Finance</a> .</li>
+    <li><a href="https://doi.org/10.3390/joitmc7010019">Fintech Frontiers in Quantum Computing, Fractals, 
+and Blockchain Distributed Ledger: 
+Paradigm Shifts and Open Innovation</a> .</li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9643469">Quantum Machine Learning for Finance ICCAD Special Session Paper</a> .</li>
+    <li><a href="https://ieeexplore.ieee.org/abstract/document/9592468">Quantum Computing for Supply Chain Finance</a> .
+      <h4 id="quantum-computational-quantitative-trading">Quantum computational quantitative trading:</h4>
+      <p>high-frequency statistical arbitrage 
+algorithm</p>
+      <h5 id="概述">概述</h5>
+    </li>
+    <li>Quantitative trading is an integral part of financial markets 
+with high calculation speed requirements, while no quantum algorithms 
+have been introduced into this field yet. <font color="red">
+We propose quantum algorithms for high-frequency statistical arbitrage trading 
+by utilizing variable time condition number estimation and 
+quantum linear regression</font>. 
+The algorithm complexity has been reduced from the 
+classical benchmark O(N2d) to $O(\sqrt{dN}{\kappa }<em>{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$, 
+where N is the length of trading data, and 
+d is the number of stocks, κ0 is the condition number and epsilon is the 
+desired precision. Moreover, two tool algorithms for condition number estimation 
+and cointegration test are developed.
+(量化交易是金融市场不可分割的组成部分，
+对计算速度要求很高，但目前还没有量子算法引入该领域。<font color="red">
+我们利用可变时间条件数估计和量子线性回归提出了高频统计套利交易的量子算法</font>。
+算法复杂度已从经典基准O ( N 2 d ) 降低到$O(\sqrt{dN}{\kappa }</em>{0}^{2}\,\mathrm{log}{(1/{\epsilon})}^{2})\left.\right)$，
+其中N是交易数据的长度，d是股票数量，κ 0是条件数，ε是所需的精度。
+此外，还开发了两种用于条件数估计和协整检验的工具算法。)</li>
+  </ul>
+</blockquote>
+:ET
