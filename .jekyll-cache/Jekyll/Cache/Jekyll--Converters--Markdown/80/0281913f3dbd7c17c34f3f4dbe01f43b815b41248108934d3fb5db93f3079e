@@ -1,0 +1,34 @@
+I"<h3 id="abstract">Abstract</h3>
+
+<blockquote>
+  <ul>
+    <li>Quantum computers can solve specific problems that are not 
+feasible on “classical” hardware. Harvesting the speed-up provided 
+by quantum computers therefore has the potential to change any 
+industry which uses computation, including finance. 
+First quantum applications for the financial industry involving optimization, 
+simulation, and machine learning problems have already been proposed and 
+applied to use cases such as portfolio management, risk management, 
+and pricing derivatives. This survey reviews platforms, algorithms, 
+methodologies, and use cases of quantum computing for various applications 
+in finance in a structured way. It is aimed at people working in the financial 
+industry and serves to gain an overview of the current development and 
+capabilities and understand the potential of quantum computing in the financial industry.
+(量子计算机可以解决在“经典”硬件上不可行的特定问题。
+因此，利用量子计算机提供的加速能力有可能改变任何使用计算的行业，
+包括金融业。涉及优化、模拟和机器学习问题的金融行业的第一个量子应用
+已经被提出并应用于投资组合管理、风险管理和衍生品定价等用例。
+本调查以结构化的方式回顾了金融领域各种应用的量子计算平台、算法、方法和用例。
+它面向在金融行业工作的人们，旨在概述当前的发展和能力，并了解量子计算在金融行业的潜力。)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>All these points render it uncertain whether the current leading quantum 
+technologies used to create early demonstration systems will be used to create 
+future large-scale quantum computers.
+()</li>
+  </ul>
+</blockquote>
+:ET

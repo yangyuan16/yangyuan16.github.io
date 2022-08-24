@@ -1,0 +1,26 @@
+I"�<h3 id="abstract">Abstract</h3>
+
+<blockquote>
+  <ul>
+    <li>Quantum computers can solve specific problems that are not 
+feasible on “classical” hardware. Harvesting the speed-up provided 
+by quantum computers therefore has the potential to change any 
+industry which uses computation, including finance. 
+First quantum applications for the financial industry involving optimization, 
+simulation, and machine learning problems have already been proposed and 
+applied to use cases such as portfolio management, risk management, 
+and pricing derivatives. This survey reviews platforms, algorithms, 
+methodologies, and use cases of quantum computing for various applications 
+in finance in a structured way. It is aimed at people working in the financial 
+industry and serves to gain an overview of the current development and 
+capabilities and understand the potential of quantum computing in the financial industry.
+()</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+:ET

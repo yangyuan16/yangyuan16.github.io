@@ -1,0 +1,138 @@
+I"� <h3 id="abstract">Abstract</h3>
+
+<blockquote>
+  <ul>
+    <li>Quantum computers can solve specific problems that are not 
+feasible on “classical” hardware. Harvesting the speed-up provided 
+by quantum computers therefore has the potential to change any 
+industry which uses computation, including finance. 
+First quantum applications for the financial industry involving optimization, 
+simulation, and machine learning problems have already been proposed and 
+applied to use cases such as portfolio management, risk management, 
+and pricing derivatives. This survey reviews platforms, algorithms, 
+methodologies, and use cases of quantum computing for various applications 
+in finance in a structured way. It is aimed at people working in the financial 
+industry and serves to gain an overview of the current development and 
+capabilities and understand the potential of quantum computing in the financial industry.
+(量子计算机可以解决在“经典”硬件上不可行的特定问题。
+因此，利用量子计算机提供的加速能力有可能改变任何使用计算的行业，
+包括金融业。涉及优化、模拟和机器学习问题的金融行业的第一个量子应用
+已经被提出并应用于投资组合管理、风险管理和衍生品定价等用例。
+本调查以结构化的方式回顾了金融领域各种应用的量子计算平台、算法、方法和用例。
+它面向在金融行业工作的人们，旨在概述当前的发展和能力，并了解量子计算在金融行业的潜力。)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>All these points render it uncertain whether the current leading quantum 
+technologies used to create early demonstration systems will be used to create 
+future large-scale quantum computers.
+(所有这些都使得目前用于创建早期演示系统的领先量子技术
+是否将用于创建未来的大规模量子计算机变得不确定。)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>It follows that simulating the behavior of a quantum computer on a classical 
+computer is exponentially expensive in terms of the number of qubits [13] 
+and only feasible for small systems.
+(因此，在经典计算机上模拟量子计算机的行为在量子比特数方面是指数级昂贵的[13]，并且仅适用于小系统。)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>A swap gate simply interchanges the state of two qubits and can therefore 
+be used to move the relevant logical qubits to two connected physical qubits 
+where the desired gate can be applied. However, performing swaps increases the 
+number of operations, which has two main drawbacks. First, it slows the algorithm down, 
+and second, since all gates on a practical quantum computer are noisy, 
+it leads to more overall noise which can even result in the algorithm becoming 
+unusable in practice.
+(交换门简单地交换两个量子位的状态，因此可以用于将相关的逻辑量子位移动到两个连接的物理量子位，
+在那里可以应用所需的门。然而，执行交换增加了操作的数量，这有两个主要缺点。
+首先，它减慢了算法的速度，其次，由于实际量子计算机上的所有门都有噪声，
+它会导致更大的总体噪声，甚至可能导致算法在实践中变得不可用)。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>In a similar way, the challenge that quantum gates are noisy and quickly lead to 
+calculations which are unreliable can be tackled using quantum error correction [15]. 
+This comes at the expense of needing even more qubits. Once quantum computers pass 
+the size needed to implement error correction, they can correct the errors during a 
+calculation, which will in turn allow even larger computations to be made.
+(以类似的方式，量子门噪声大且很快导致计算不可靠的挑战可以通过量子纠错来解决[15]。
+这是以需要更多量子比特为代价的。一旦量子计算机通过了实现纠错所需的大小，
+它们就可以在计算过程中纠正错误，从而允许进行更大的计算。)。</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Further development of quantum software could reduce the hardware 
+requirements of quantum computers and, in turn, lead to earlier applications 
+of quantum computers in the financial services industry. 
+While it can be a struggle to build the hardware that could support ambitious algorithms, 
+the theoretical speed-up predicted for these algorithms is also a reminder 
+of the potential of quantum computing. Algorithm research and hardware development 
+therefore incentivize each other [16]. 
+Experimental progress is necessary to unlock the full potential of quantum computing. 
+However, it is possible that noisy intermediate-scale quantum computers 
+will find interesting applications far before general-purpose, 
+fault-tolerant quantum computing is available [17].
+(量子软件的进一步开发可以降低量子计算机的硬件需求，
+进而导致量子计算机在金融服务行业的早期应用。
+虽然构建能够支持雄心勃勃的算法的硬件可能是一项艰巨的任务，
+但预测这些算法的理论速度也提醒我们量子计算的潜力。
+因此，算法研究和硬件开发相互激励[16]。实验进展对于充分挖掘量子计算的潜力是必要的。
+然而，在通用容错量子计算出现之前，
+有噪声的中等规模量子计算机可能会发现有趣的应用[17]。).</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The literature on the impacts of quantum computers on the financial industry or 
+an estimate of the potential monetary benefits is scarce. It was suggested in [21] that 
+applying quantum computing in finance results in enhancing investment gains, 
+reducing capital requirements, creating new investment opportunities, and 
+improving risk management and compliance. It was stated in [23] that application of 
+quantum computing could lead to an increase in cyber-security, accelerate high frequency 
+trading, or lead to greater accuracy in the simulation of customers’ purchasing preferences, 
+resulting in an improved data-driven customer relation management.
+(关于量子计算机对金融业的影响或潜在货币收益估计的文献很少。[21]中提出，
+将量子计算应用于金融可以提高投资收益，降低资本要求，创造新的投资机会，
+并改善风险管理和合规性。[23]中指出，量子计算的应用可以提高网络安全性，加速高频交易，
+或提高客户购买偏好模拟的准确性，从而改善数据驱动的客户关系管理。).</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The authors in [1] write that the race in the field of quantum computing 
+is largely motivated by the disruption the technology is expected to bring, 
+resulting in a complete transformation of the financial services industry. 
+However, the authors do not elaborate on the expected degree of disruption or impact. 
+The high expectations might be explained by the theoretical speedup compared 
+to classical computers. However, it is still very difficult to 
+estimate when the technology will be available to exploit the potential of 
+these algorithms. For instance, in [24] it is suggested that we stand at least 
+five years away from quantum computing significantly impacting the financial 
+services landscape. This is in line with the authors of [19] who state that 
+widely-adopted commercial applications may remain several years away. 
+Also, there are no estimates as to how expensive maintaining 
+the infrastructure and thus running a quantum computer will be.
+([1]中的作者写道，量子计算领域的竞争在很大程度上是由该技术预计将带来的破坏所推动的，
+从而导致金融服务业的彻底转型。然而，作者没有详细说明预期的破坏或影响程度。
+与经典计算机相比，理论上的加速可以解释这种高期望。
+然而，仍然很难估计该技术何时可用于开发这些算法的潜力。例如，在[24]中，
+有人建议我们距离量子计算至少五年，这将对金融业产生重大影响
+服务领域。这与[19]的作者一致，他们指出，广泛采用的商业应用可能还需要几年时间。
+此外，还没有关于维护基础设施和运行量子计算机的成本的估计。).</li>
+  </ul>
+</blockquote>
+:ET
