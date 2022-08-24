@@ -1,0 +1,145 @@
+I"�<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading papers</p>
+  <ul>
+    <li><a href="http://cfrc.pbcsf.tsinghua.edu.cn/ueditor/php/upload/file/20210611/1623389943123279.pdf?l=en&amp;y=2022?l=en&amp;y=2021">Finding Anomalies in China,
+KeWen Hou, Fang Qiao, Xiaoyuan Zhang (2021)</a></li>
+    <li><a href="https://www.cafr-sif.com/2019/2019selected/Replicating%20Anomalies%20in%20China.pdf">Replicating Anomalies in China,
+Fang Qiao (2021)</a>.</li>
+    <li><a href="https://doi.org/10.1016/j.pacfin.2021.101607">Anomalies in the China A-share market (2021)</a></li>
+  </ul>
+</blockquote>
+
+<h3 id="finding-anomalies-in-china-kewen-hou-fang-qiao-xiaoyuan-zhang-2021">Finding Anomalies in China, KeWen Hou, Fang Qiao, Xiaoyuan Zhang (2021)</h3>
+
+<h4 id="概述">概述</h4>
+
+<blockquote>
+  <ul>
+    <li>the Chinese stock market differs from the U.S. stock market in two important
+aspects: <font color="red">trading environment</font> 
+and <font color="red">information environment</font>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>After risk adjustment, we find that 97 CAPM alphas are significant,
+16 CH3 alphas are significant and 15 CH4 alphas are significant.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The CAPM alphas are very similar to the raw return, indicating that 
+the market risk fails to explain these anomaly returns.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>In contrast, with embedded size, value and turnover effects, the
+CH3 and CH4 models are able to explain away a significant part of anomaly
+raw returns, and thus we foucs our discussion on alphas using this model.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Among the 16 significant alphas relative to CH3 factors, 7 anomalies are 
+constructed using liquidity-related information, and 4 are related to 
+accounting-related information.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Among the 15 significant alphas relative to the CH4 factors, 
+half of anomalies are from trading-related information and half of them 
+are from accounting-related information.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>we consturct the composite anomalies with score, Fama-MacBeth regression, 
+Lasso, and Random Forest by combining many signals. 
+In total, we construct 10 composite anomalies with all characteristics in each 
+category, sub-category, and in total.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We find that the majority of the composite anomalies can pass the 
+multiple hurdle of 2.85
+After risk adjustment with the CH3 factors, almost half of the composite anomalies 
+are still significant, with the majority of them from trading-related anomalies.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>There are still signigicant CH4 alphas using random forecast method, which
+are from the trading-related group. <font color="red"> It indicates that the 
+popular machine learning methods of Lasso and Random Forest outperform the 
+traditional methods of score and Fama-MacBeth regression</font> 
+The composite anomalies confirm that trading-related anomalies are 
+very important in China.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We compare the anomaly results in China with those in the United States, as in Hou, Xue
+and Zhang (2019), and identify three major differences. First, out of the 426 anomalies, 23% of
+anomalies are significant in China, which is lower than the replication rate (35%) in the United
+States, with the same hurdle being the absolute t-value above 1.96.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Second, most of the significant anomalies in China are trading-related anomalies, using
+characteristics such as volatility, turnover, and dollar trading volume, especially liquidity
+measures; while almost all trading frictions anomalies are insignificant in the United States as in
+Hou, Xue and Zhang (2019).</li>
+  </ul>
+</blockquote>
+
+<h4 id="new-words">New words</h4>
+
+<blockquote>
+  <ul>
+    <li>anomaly pattern</li>
+    <li>information environment</li>
+    <li>192 are trading-related and 234 are accounting-related</li>
+    <li>shell-value contamination</li>
+    <li>shorting ban</li>
+    <li>firm-level liquidity measures</li>
+    <li>risk-adjusted returns</li>
+    <li>multiple test hurdle</li>
+    <li>composite anomalies</li>
+  </ul>
+
+  <h3 id="replicating-anomalies-in-china-fang-qiao-2021">Replicating Anomalies in China, Fang Qiao (2021)</h3>
+</blockquote>
+
+<h4 id="概述-1">概述</h4>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+
+<h3 id="anomalies-in-the-china-a-share-market-2021">Anomalies in the China A-share market (2021)</h3>
+
+<h4 id="概述-2">概述</h4>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+:ET

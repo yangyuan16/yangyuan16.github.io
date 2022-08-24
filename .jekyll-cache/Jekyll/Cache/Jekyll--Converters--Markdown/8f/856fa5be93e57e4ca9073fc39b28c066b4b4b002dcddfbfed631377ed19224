@@ -1,0 +1,343 @@
+I"�)<h3 id="abstract">Abstract</h3>
+<blockquote>
+  <p>Notes for reading papers</p>
+  <ul>
+    <li><a href="http://cfrc.pbcsf.tsinghua.edu.cn/ueditor/php/upload/file/20210611/1623389943123279.pdf?l=en&amp;y=2022?l=en&amp;y=2021">Finding Anomalies in China,
+KeWen Hou, Fang Qiao, Xiaoyuan Zhang (2021)</a></li>
+    <li><a href="https://www.cafr-sif.com/2019/2019selected/Replicating%20Anomalies%20in%20China.pdf">Replicating Anomalies in China,
+Fang Qiao (2021)</a>.</li>
+    <li><a href="https://doi.org/10.1016/j.pacfin.2021.101607">Anomalies in the China A-share market (2021)</a></li>
+    <li><a href="">Hus, Viswanathan, Wang, Wool (2017)</a></li>
+    <li><a href="">Liu, Stambaugh and Yuan (2019)</a></li>
+    <li><a href="">Carpenter, Lu, and Whitelaw (2018)</a></li>
+    <li><a href="">Chen, Kim, Yao, and Yu (2010)</a></li>
+  </ul>
+</blockquote>
+
+<h3 id="finding-anomalies-in-china-kewen-hou-fang-qiao-xiaoyuan-zhang-2021">Finding Anomalies in China, KeWen Hou, Fang Qiao, Xiaoyuan Zhang (2021)</h3>
+
+<h4 id="概述">概述</h4>
+
+<blockquote>
+  <ul>
+    <li>the Chinese stock market differs from the U.S. stock market in two important
+aspects: <font color="red">trading environment</font> 
+and <font color="red">information environment</font>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>After risk adjustment, we find that 97 CAPM alphas are significant,
+16 CH3 alphas are significant and 15 CH4 alphas are significant.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The CAPM alphas are very similar to the raw return, indicating that 
+the market risk fails to explain these anomaly returns.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>In contrast, with embedded size, value and turnover effects, the
+CH3 and CH4 models are able to explain away a significant part of anomaly
+raw returns, and thus we foucs our discussion on alphas using this model.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Among the 16 significant alphas relative to CH3 factors, 7 anomalies are 
+constructed using liquidity-related information, and 4 are related to 
+accounting-related information.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Among the 15 significant alphas relative to the CH4 factors, 
+half of anomalies are from trading-related information and half of them 
+are from accounting-related information.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>we consturct the composite anomalies with score, Fama-MacBeth regression, 
+Lasso, and Random Forest by combining many signals. 
+In total, we construct 10 composite anomalies with all characteristics in each 
+category, sub-category, and in total.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We find that the majority of the composite anomalies can pass the 
+multiple hurdle of 2.85
+After risk adjustment with the CH3 factors, almost half of the composite anomalies 
+are still significant, with the majority of them from trading-related anomalies.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>There are still signigicant CH4 alphas using random forecast method, which
+are from the trading-related group. <font color="red"> It indicates that the 
+popular machine learning methods of Lasso and Random Forest outperform the 
+traditional methods of score and Fama-MacBeth regression</font> 
+The composite anomalies confirm that trading-related anomalies are 
+very important in China.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We compare the anomaly results in China with those in the United States, as in Hou, Xue
+and Zhang (2019), and identify three major differences. First, out of the 426 anomalies, 23% of
+anomalies are significant in China, which is lower than the replication rate (35%) in the United
+States, with the same hurdle being the absolute t-value above 1.96.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Second, most of the significant anomalies in China are trading-related anomalies, using
+characteristics such as volatility, turnover, and dollar trading volume, especially liquidity
+measures; while almost all trading frictions anomalies are insignificant in the United States as in
+Hou, Xue and Zhang (2019).</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Third, most of the significant anomalies in the United States are driven by firm fundamental
+information in accounting statements, such as value, investment, and profitability; while in China,
+these variables mostly cannot provide statistically significant information about future stock
+returns.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>All papers find that some anomalies working in the United States may mot
+be replicated in other countries.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Jacobs and Muller (2019) study how 241 anomalies decay after publication 
+across 39 international markets, and find that the United States is the only
+country with a reliable post-publication decline in long-short returns.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>A share: are the shares of chinese firms that listed on Shanghai and Shenzhen 
+exchanges, and are open to domestic investors to trade.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>For the accounting information, the data on the balance sheet and income 
+statement stat in 1990, and the data on the cash flow statement start from
+      <ol>
+        <li>Before 2002, financial statements are reported annually or semiannually,
+and after 2002, they are reported quarterly.</li>
+      </ol>
+    </li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>For the data on balance sheet, income statement and cash flow statements,
+we fill in the missing quarterly data for calendar March and September with 
+the most recent quarterly data.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We obtain the <cont color="red"> analyst earnings forecasts data &lt;/font&gt;
+from Go-goal.com, which is the most comprehensive, accurate analysts's forecast
+database, and widely used in fund industry in China.</cont></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>quarterly institutional ownership: it reports the 
+proportion of shares held by funds, brokers, insurance, security funds,
+insurance companies, and trust companies etc.</li>
+  </ul>
+</blockquote>
+
+<h4 id="anomaly-construction">Anomaly construction</h4>
+
+<blockquote>
+  <ul>
+    <li>We implement <font color="red"> single portfolio analysis to test whether the anomalies can 
+predict stock returns </font>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>For each anomaly, we follow the <font color="red">[k, m, n] approach as 
+in Jegadeesh and Titman (1993) </font>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Suppose the current month is t. We first 
+collect <font color="red">firm-level information </font> 
+to be used as anomaly sorting variables over [t-k+1, t].
+(相当于财报采用ffill方式填充)</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>At time t, we sort A-share stocks into decile groups based on the 
+sorting variables. Decile 1 contains the 10% of stocks with the lowest 
+sorting variable values, while decile 10 contains the 10% of stocks with the 
+largest sorting variable values.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Then we wait a period of m months over [t, t+m].</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>if investors prefer immediate investment, we set m to be zero.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We hold the decile portfolios, determined at time t, over the next 
+[t+m+1, t+m+n] months.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The value-weighted decile portfolio raw returns are computed using 
+previous month-end firm market capitalization as weights.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>We also <font color="red">provide results using equal weights </font>.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>If the anomaly sorting variable can predict future return, we expect to
+see a significant difference in raw returns between decile 10 and decile 1,
+over the holding period of [t+m+1, t+m+n].</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The choice of the parameter k, m, n depends on the specific anomalies.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>For instance, <font color="red">the waiting period m is zero except for 
+momentum anomalies</font>, and the holding period n is generally 
+set to be 1-, 6-, or 12-month.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The anomaly sorting variables, <font color="red">if coming from accounting information</font>,
+might be constructed over the previous year or quarter, while if the sorting variables 
+are from trading, they can be constructed over the previous month.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>The choice of k, m, n for each anomaly is clearly marked for each anomaly 
+in online Appendix B.</li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li>Since Chinese trading rules and accounting standards are different 
+from the United States. <font color="red">we made several adjustments to the original 
+sorting procedures by Hou, Xue and Zhang (2019) for the U.S. data.</font></li>
+  </ul>
+</blockquote>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+
+<h4 id="multiple-tests">Multiple Tests</h4>
+
+<h4 id="new-words">New words</h4>
+
+<blockquote>
+  <ul>
+    <li>anomaly pattern</li>
+    <li>information environment</li>
+    <li>192 are trading-related and 234 are accounting-related</li>
+    <li>shell-value contamination</li>
+    <li>shorting ban</li>
+    <li>firm-level liquidity measures</li>
+    <li>risk-adjusted returns</li>
+    <li>multiple test hurdle</li>
+    <li>return with dividends</li>
+    <li>free float A share</li>
+    <li>quarterly institutional ownership</li>
+    <li>we merge the above data based on stock code, which is unique for each firm.</li>
+    <li>filters: we impose several filters on our datasets</li>
+    <li>including actively traded and delisted firms</li>
+    <li>spikes: The large spokes are likely dirven by excessive trading around large
+movements in stock prices, especially during market boom periods</li>
+    <li>market boom periods</li>
+  </ul>
+</blockquote>
+
+<h3 id="replicating-anomalies-in-china-fang-qiao-2021">Replicating Anomalies in China, Fang Qiao (2021)</h3>
+
+<h4 id="概述-1">概述</h4>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+
+<h3 id="anomalies-in-the-china-a-share-market-2021">Anomalies in the China A-share market (2021)</h3>
+
+<h4 id="概述-2">概述</h4>
+
+<blockquote>
+  <ul>
+    <li></li>
+  </ul>
+</blockquote>
+:ET
