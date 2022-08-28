@@ -1,0 +1,16 @@
+I"ÿ<h1 id="data">Data</h1>
+<p>We use CSMAR data set</p>
+
+<h1 id="code">Code</h1>
+<blockquote>
+  <p>$ git clone https://github.com/open-assetpricing-china/stock-predictors.git</p>
+</blockquote>
+
+<h1 id="document">Document:</h1>
+<blockquote>
+  <p>see the documentation on <a href="https://stock-predictors.readthedocs.io/en/latest/">ReadTheDoc</a> .</p>
+  <blockquote>
+    <p><img src="http://yangyuan16.github.io//images/posts/Quantitative_analysis/OSAP_readthedocs.jpg" alt="" /></p>
+  </blockquote>
+</blockquote>
+:ET
