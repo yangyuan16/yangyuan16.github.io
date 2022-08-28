@@ -1,0 +1,14 @@
+I"Û<h1 id="data">Data</h1>
+<p>The quantum many-body states are calculated by <a href="https://en.wikipedia.org/wiki/Density_matrix_renormalization_group">DMRG</a>.</p>
+
+<h1 id="code">Code</h1>
+<blockquote>
+  <p><a href="https://github.com/yangyuan16/QSvisualization">QTSNE</a>.</p>
+</blockquote>
+
+<h1 id="paper">Paper:</h1>
+<blockquote>
+  <p><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.075106">PHYSICAL REVIEW B 103, 075106 (2021)</a></p>
+</blockquote>
+
+:ET
