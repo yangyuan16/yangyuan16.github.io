@@ -1,0 +1,20 @@
+I"�<h3 id="methods">Methods</h3>
+
+<h4 id="pca">PCA</h4>
+
+<blockquote>
+  <ul>
+    <li><a href="https://mp.weixin.qq.com/s/L6O85MbV_i4nujJ4yIdoLg">主成分分析和因子分析</a>.</li>
+    <li>因子载荷旋转: 载荷矩阵进行旋转，可得到相应的特征向量。</li>
+    <li>Kaiser-Meyer-Olkin抽样充分性测度: 
+也是用于<font color="red">测量变量之间相关关系的强弱的重要指标，是通过比较两个变量的相关系数
+与偏相关系数得到的</font>。</li>
+    <li>Kaiser-Meyer-Olkin抽样充分性测度: <font color="red">KMO越高，
+表明变量的共性越强和SMC比较高表明变量的线性关系越强，共性越强，主成分分析就越合适</font>。</li>
+    <li>SMC: 即一个变量与其他所有变量的复相关系数的平方，
+也就是复回归方程的可决系数。<font color="red">SMC比较高表明变量的线性关系越强，共性越强，主成分分析就越合适</font>。</li>
+    <li></li>
+    <li></li>
+  </ul>
+</blockquote>
+:ET
