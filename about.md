@@ -12,7 +12,7 @@ Dr. Yang's research fields of interest include the [tensor network](https://en.w
 [application of quantum computing in finance](https://www.ibm.com/thought-leadership/institute-business-value/report/exploring-quantum-financial),
 and [multi-factors asset pricing models](https://www.investopedia.com/terms/m/multifactor-model.asp).   
 
-### paper list 
+### Publications 
 > Reentrance of the topological phase in a spin-1 frustrated Heisenberg chain
 >[PHYSICAL REVIEW B 101, 045133 (2020)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.045133)
 >_Yuan Yang_, Shi-Ju Ran, Xi Chen, Zheng-Zhi Sun, Shou-Shu Gong, Zhengchuan Wang, and Gang Su 
