@@ -1,9 +1,0 @@
-I"<h4 id="points">Points:</h4>
-
-<blockquote>
-  <ul>
-    <li>将机器学习中的 stacking 算法用于股权溢价交易，</li>
-    <li>通过一组底层模型来训练一个高层模型，即元模型，从而产生更精细化的预测。</li>
-  </ul>
-</blockquote>
-:ET

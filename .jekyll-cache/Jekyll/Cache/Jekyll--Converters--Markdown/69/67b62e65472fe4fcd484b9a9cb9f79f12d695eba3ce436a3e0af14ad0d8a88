@@ -1,0 +1,47 @@
+I"a<h4 id="daily-reading-lists">Daily reading lists:</h4>
+<blockquote>
+  <ul>
+    <li><a href="https://doi.org/10.1016/j.jempfin.2022.04.001">Stock return prediction, Stacking a variety of models</a></li>
+    <li><a href="https://doi.org/10.1016/j.intfin.2022.101556">EPU spillovers and stock return predictability: A cross-country study</a></li>
+    <li></li>
+  </ul>
+</blockquote>
+
+<h4 id="stock-return-prediction-stacking-a-variety-of-models">Stock return prediction, Stacking a variety of models</h4>
+
+<blockquote>
+  <ul>
+    <li>将机器学习中的 stacking 算法用于股权溢价交易，</li>
+    <li>通过一组底层模型来训练一个高层模型，即元模型，从而产生更精细化的预测。</li>
+  </ul>
+
+</blockquote>
+
+<h4 id="epu-spillovers-and-stock-return-predictability-a-cross-country-study">EPU spillovers and stock return predictability: A cross-country study</h4>
+
+<blockquote>
+  <ul>
+    <li>本文考察了<font color="red">经济政策不确定性（EPU）的传递（即EPU溢出效应）</font>
+在多大程度上推动了全球股市的收益（因此可以预测）。</li>
+    <li>文章亮点：
+      <blockquote>
+        <ul>
+          <li>应用高维 factor-copula model 来估计 EPU spillovers (EPU 溢出效应)
+as expected probability in distress (EPD) (作为预期陷入困境的概率).</li>
+          <li>本文研究了 EPU 溢出效应对全球 23 个市场的股票收益的影响。</li>
+          <li>This paper finds EPD significantly and negatively predicts
+country-level returns in global markets. 
+(本文发现 EPD 显着地负面预测了全球市场的国家级回报)。</li>
+          <li>Return predictability through the spillover channel is highly 
+significant and dominates that through the domestic channel.
+(通过溢出渠道的回报可预测性非常重要，并且在国内渠道中占主导地位。)</li>
+          <li>The results are robust to various model specifications and 
+alternative measures of EPU spillovers.
+(结果对各种模型规范和 EPU 溢出的替代措施是稳健的。)</li>
+        </ul>
+      </blockquote>
+    </li>
+  </ul>
+</blockquote>
+
+:ET

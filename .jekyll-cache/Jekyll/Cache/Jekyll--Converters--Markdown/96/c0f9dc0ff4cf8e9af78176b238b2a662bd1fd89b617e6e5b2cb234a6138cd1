@@ -1,0 +1,39 @@
+I"�<h4 id="daily-reading-lists">Daily reading lists:</h4>
+<blockquote>
+  <ul>
+    <li><a href="https://doi.org/10.1016/j.jempfin.2022.04.001">Stock return prediction, Stacking a variety of models</a></li>
+    <li><a href="https://doi.org/10.1016/j.intfin.2022.101556">EPU spillovers and stock return predictability: A cross-country study</a></li>
+    <li></li>
+  </ul>
+</blockquote>
+
+<h4 id="stock-return-prediction-stacking-a-variety-of-models">Stock return prediction, Stacking a variety of models</h4>
+
+<blockquote>
+  <ul>
+    <li>将机器学习中的 stacking 算法用于股权溢价交易，</li>
+    <li>通过一组底层模型来训练一个高层模型，即元模型，从而产生更精细化的预测。</li>
+  </ul>
+
+</blockquote>
+
+<h4 id="epu-spillovers-and-stock-return-predictability-a-cross-country-study">EPU spillovers and stock return predictability: A cross-country study</h4>
+
+<blockquote>
+  <ul>
+    <li>本文考察了<font color="red">经济政策不确定性（EPU）的传递（即EPU溢出效应）</font>
+在多大程度上推动了全球股市的收益（因此可以预测）。</li>
+    <li>文章亮点：
+      <blockquote>
+        <ul>
+          <li>应用高维 factor-copula model 来估计 EPU spillovers (EPU 溢出效应)
+as expected probability in distress (EPD) (作为预期陷入困境的概率).</li>
+          <li>本文研究了 EPU 溢出效应对全球 23 个市场的股票收益的影响。</li>
+          <li></li>
+        </ul>
+      </blockquote>
+    </li>
+  </ul>
+</blockquote>
+
+:ET
