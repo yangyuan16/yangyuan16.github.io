@@ -16,6 +16,7 @@ Fang Qiao (2021)](https://www.cafr-sif.com/2019/2019selected/Replicating%20Anoma
 > * [Liu, Stambaugh and Yuan (2019)]()
 > * [Carpenter, Lu, and Whitelaw (2018)]()
 > * [Chen, Kim, Yao, and Yu (2010)]() 
+> * [China A-shares, FAQs, facts, and figures](https://www.ubs.com/global/en/assetmanagement/insights/thematic-viewpoints/apac-and-emerging/articles/stock-connect-china-a-shares-faqs-equity-investing.html)
 
 ### Finding Anomalies in China, KeWen Hou, Fang Qiao, Xiaoyuan Zhang (2021)
 

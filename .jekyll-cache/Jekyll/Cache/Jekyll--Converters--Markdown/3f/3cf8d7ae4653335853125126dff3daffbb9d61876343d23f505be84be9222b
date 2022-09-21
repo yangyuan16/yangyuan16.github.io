@@ -1,4 +1,5 @@
-I"ô	<p>Dr. Yangâ€™s research fields of interest include the <a href="https://en.wikipedia.org/wiki/Tensor_network">tensor network</a>, 
+I"Á
+<p>Dr. Yangâ€™s research fields of interest include the <a href="https://en.wikipedia.org/wiki/Tensor_network">tensor network</a>, 
 <a href="https://en.wikipedia.org/wiki/Many-body_problem">quantum many-body system</a>,
 <a href="https://en.wikipedia.org/wiki/Machine_learning">machine learning</a>, 
 <a href="https://en.wikipedia.org/wiki/Quantum_machine_learning">quantum machine learning</a>, 
@@ -39,5 +40,10 @@ Wanzhou Zhang, <em>Yuan Yang</em>, Lijuan Guo, Chengxiang Ding, and Tony C. Scot
 
 <blockquote>
   <p><a href="https://github.com/open-assetpricing-china/stock-predictors">Open source asset pricing in chinese stocksâ€™ market</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://github.com/yangyuan16/QC-alpha-circuit">QC-alpha-circuit</a> quantum circuit to 
+realize the time evolution of Heisenberg model with transverse field.</p>
 </blockquote>
 :ET

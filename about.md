@@ -33,3 +33,6 @@ and [multi-factors asset pricing models](https://www.investopedia.com/terms/m/mu
 > [Q-TSNE](https://github.com/yangyuan16/QSvisualization) algorithm to visualize the quantum many-body states.
 
 > [Open source asset pricing in chinese stocks' market](https://github.com/open-assetpricing-china/stock-predictors)
+
+> [QC-alpha-circuit](https://github.com/yangyuan16/QC-alpha-circuit) quantum circuit to 
+> realize the time evolution of Heisenberg model with transverse field.  
