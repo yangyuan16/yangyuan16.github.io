@@ -13,6 +13,11 @@ Dr. Yang's research fields of interest include the [tensor network](https://en.w
 and [multi-factors asset pricing models](https://www.investopedia.com/terms/m/multifactor-model.asp).   
 
 ### Publications 
+> Towards simulating time evolution of specific quantum many-body system by lower counts of
+quantum gates
+>[Europhysics Letters, Volume 141, Number 1](https://iopscience.iop.org/article/10.1209/0295-5075/acad25/meta)
+> Guanlin Jian[1], Yuan Yang[1], Ze Liu, Zhen-Gang Zhu, and Zhengchuan Wang
+
 > Reentrance of the topological phase in a spin-1 frustrated Heisenberg chain
 >[PHYSICAL REVIEW B 101, 045133 (2020)](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.101.045133)
 >_Yuan Yang_, Shi-Ju Ran, Xi Chen, Zheng-Zhi Sun, Shou-Shu Gong, Zhengchuan Wang, and Gang Su 
