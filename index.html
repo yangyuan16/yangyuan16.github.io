@@ -1,34 +1,145 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuan Yang | Physics & Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #fdfdfd;
+            --text-color: #333;
+        }
 
-<div class="main-post-list hidden">
+        body {
+            font-family: 'Noto Serif SC', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
 
-  <ol class="post-list">
-    {% for post in paginator.posts %}
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
-      <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
-        <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
-        <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
+        header {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: var(--primary-color); }
+        .subtitle { font-size: 1.1em; color: #7f8c8d; font-style: italic; }
+
+        nav {
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            margin-bottom: 40px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section { margin-bottom: 40px; }
+        h2 { border-left: 4px solid var(--primary-color); padding-left: 15px; color: var(--primary-color); }
+
+        .post-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        .post-item:hover { background: #f9f9f9; }
+
+        .post-date {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9em;
+            color: #95a5a6;
+            min-width: 120px;
+        }
+
+        .post-link {
+            text-decoration: none;
+            color: var(--text-color);
+            flex-grow: 1;
+        }
+
+        .post-link:hover { color: var(--accent-color); }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            font-size: 0.8em;
+            color: #bdc3c7;
+        }
+
+        /* 标签样式 */
+        .tag {
+            font-size: 0.7em;
+            padding: 2px 8px;
+            background: #eee;
+            border-radius: 3px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yuan Yang</h1>
+    <p class="subtitle">Physics PhD | Quantitative Finance | A-share Explorer</p>
+    <nav>
+        <a href="/">Home</a>
+        <a href="#research">Research</a>
+        <a href="#notes">Notes</a>
+        <a href="https://github.com/yangyuan16" target="_blank">GitHub</a>
+    </nav>
+</header>
+
+<main>
+    <section id="research">
+        <h2>Research & Projects</h2>
+        <div class="post-item">
+            <span class="post-date">2026-02</span>
+            <a class="post-link" href="#">Trilayer t-J-J_perp Model Analysis <span class="tag">Physics</span></a>
         </div>
-        <a href="/tags">
-          <div class = "post-list-icon-mate">
-            <span class="post-list__meta--tags-right">{{ post.tags }}</span>
-          </div>
-          <div class = "post-list-small-mate">
-          <a class="btn-border-small" href={{ post.url }}> all text » </a>
-          </div>
-      </div>
-      <hr class="post-list__divider" />
-    </li>
-    {% endfor %}
-  </ol>
+        <div class="post-item">
+            <span class="post-date">2025-11</span>
+            <a class="post-link" href="#">Quantum Many-body States Visualization <span class="tag">Algorithm</span></a>
+        </div>
+    </section>
 
-  {% include pagination.html %}
+    <section id="notes">
+        <h2>Finance & Investing</h2>
+        <div class="post-item">
+            <span class="post-date">2026-02</span>
+            <a class="post-link" href="#">A-share Small-cap Tech Strategy <span class="tag">Finance</span></a>
+        </div>
+        <div class="post-item">
+            <span class="post-date">2025-08</span>
+            <a class="post-link" href="#">Notes on Machine Learning in Finance <span class="tag">Quant</span></a>
+        </div>
+    </section>
+</main>
 
-</div>
+<footer>
+    &copy; 2026 Yuan Yang. Built with pure HTML/CSS.
+</footer>
+
+</body>
+</html>
