@@ -1,145 +1,1075 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuan Yang | Physics & Finance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Yangyuan Yuan | Software Engineer</title>
+    <meta name="description" content="Software Engineer specializing in full-stack development and machine learning. Based in New York, NY.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --bg-color: #fdfdfd;
-            --text-color: #333;
+            --bg-primary: #faf9f7;
+            --bg-secondary: #f5f3f0;
+            --bg-card: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-muted: #8a8a8a;
+            --accent: #c9a66b;
+            --accent-hover: #b89455;
+            --border: #e8e6e3;
+            --shadow: 0 2px 20px rgba(0,0,0,0.04);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.08);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #0d0d11;
+            --bg-secondary: #141418;
+            --bg-card: #1a1a1f;
+            --text-primary: #f5f5f5;
+            --text-secondary: #b8b8b8;
+            --text-muted: #6a6a6a;
+            --accent: #d4b896;
+            --accent-hover: #e8d4b8;
+            --border: #2a2a30;
+            --shadow: 0 2px 20px rgba(0,0,0,0.3);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Noto Serif SC', serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
+            transition: var(--transition);
         }
 
-        header {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 0 20px;
-            text-align: center;
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            line-height: 1.2;
         }
 
-        h1 { font-size: 2.5em; margin-bottom: 10px; color: var(--primary-color); }
-        .subtitle { font-size: 1.1em; color: #7f8c8d; font-style: italic; }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
 
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            letter-spacing: 0.02em;
+        }
+
+        /* Navigation */
         nav {
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            padding: 10px 0;
-            margin-bottom: 40px;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: var(--accent-color);
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section { margin-bottom: 40px; }
-        h2 { border-left: 4px solid var(--primary-color); padding-left: 15px; color: var(--primary-color); }
-
-        .post-item {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg-primary);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 15px;
-            transition: 0.3s;
+            align-items: center;
         }
 
-        .post-item:hover { background: #f9f9f9; }
-
-        .post-date {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.9em;
-            color: #95a5a6;
-            min-width: 120px;
-        }
-
-        .post-link {
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--text-primary);
             text-decoration: none;
-            color: var(--text-color);
-            flex-grow: 1;
         }
 
-        .post-link:hover { color: var(--accent-color); }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
 
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            padding: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            color: var(--accent);
+        }
+
+        /* Mobile menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            opacity: 0.05;
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+            width: 250px;
+            height: 250px;
+            background: var(--accent);
+            opacity: 0.03;
+            border-radius: 50%;
+            filter: blur(60px);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-tagline {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-contact {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+            color: #fff;
+        }
+
+        .chinese-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-top: 1rem;
+            letter-spacing: 0.3em;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-intro {
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 3rem;
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--bg-primary);
+            border: 2px solid var(--accent);
+            transition: var(--transition);
+        }
+
+        .timeline-item:hover::before {
+            background: var(--accent);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .timeline-company {
+            color: var(--accent);
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .timeline-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .timeline-desc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline-desc li {
+            padding-left: 1.2rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Education */
+        .education-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .education-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .education-item:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .education-school {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-degree {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .education-meta span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .skill-category:hover {
+            box-shadow: var(--shadow);
+        }
+
+        .skill-category h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: var(--bg-secondary);
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .project-year {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .project-desc {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-tech span {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            padding: 0.25rem 0.5rem;
+            background: var(--bg-secondary);
+            border-radius: 3px;
+        }
+
+        /* Publications */
+        .publications-list {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .publication-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .publication-item:hover {
+            box-shadow: var(--shadow);
+            border-color: var(--accent);
+        }
+
+        .publication-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .publication-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .publication-venue {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--accent);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .publication-author {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .contact-link:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 50px 0;
-            font-size: 0.8em;
-            color: #bdc3c7;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
         }
 
-        /* 标签样式 */
-        .tag {
-            font-size: 0.7em;
-            padding: 2px 8px;
-            background: #eee;
-            border-radius: 3px;
-            margin-left: 10px;
-            vertical-align: middle;
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .hero-contact {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .timeline {
+                padding-left: 1.5rem;
+            }
+
+            .timeline-item::before {
+                left: -1.5rem;
+            }
+
+            .contact-links {
+                flex-direction: column;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Yuan Yang</h1>
-    <p class="subtitle">Physics PhD | Quantitative Finance | A-share Explorer</p>
     <nav>
-        <a href="/">Home</a>
-        <a href="#research">Research</a>
-        <a href="#notes">Notes</a>
-        <a href="https://github.com/yangyuan16" target="_blank">GitHub</a>
+        <a href="#" class="nav-logo">YY</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"/>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                </svg>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </nav>
-</header>
 
-<main>
-    <section id="research">
-        <h2>Research & Projects</h2>
-        <div class="post-item">
-            <span class="post-date">2026-02</span>
-            <a class="post-link" href="#">Trilayer t-J-J_perp Model Analysis <span class="tag">Physics</span></a>
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <p class="hero-subtitle mono">Software Engineer</p>
+            <h1 class="animate-in">Yangyuan Yuan</h1>
+            <p class="chinese-name animate-in delay-1">袁洋远</p>
+            <p class="hero-tagline animate-in delay-2">
+                Building intelligent systems at the intersection of full-stack development and machine learning
+            </p>
+            <p class="hero-tagline animate-in delay-3" style="font-size: 1rem;">
+                New York, NY · yangyuan.yuan@outlook.com
+            </p>
+            <div class="hero-contact animate-in delay-4">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="https://github.com/yangyuan16" target="_blank" class="btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405 1.02 0 2.04.135 3 .405 2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/yangyuan-yuan-4a3b0029a" target="_blank" class="btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+            </div>
         </div>
-        <div class="post-item">
-            <span class="post-date">2025-11</span>
-            <a class="post-link" href="#">Quantum Many-body States Visualization <span class="tag">Algorithm</span></a>
+    </header>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p class="section-intro">Passionate about building scalable software solutions and conducting cutting-edge research in machine learning.</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <p class="timeline-date mono">Sep 2023 – Present</p>
+                <h3 class="timeline-title">Software Engineer</h3>
+                <p class="timeline-company">University at Albany, SUNY</p>
+                <div class="timeline-desc">
+                    <ul>
+                        <li>Developed RESTful APIs using Flask and FastAPI for campus applications</li>
+                        <li>Implemented machine learning models for predictive maintenance systems using PyTorch</li>
+                        <li>Collaborated on microservices architecture with Docker and Kubernetes</li>
+                        <li>Optimized database queries in PostgreSQL, improving performance by 40%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <p class="timeline-date mono">Oct 2023 – Jan 2025</p>
+                <h3 class="timeline-title">Research Assistant</h3>
+                <p class="timeline-company">University at Albany, SUNY</p>
+                <div class="timeline-desc">
+                    <ul>
+                        <li>Conducted research on deep ensemble learning with label smoothing techniques</li>
+                        <li>Developed neural network models using PyTorch and JAX for various applications</li>
+                        <li>Published research papers at AAAI 2025 and IEEE ICAIS 2024 as first author</li>
+                        <li>Mentored undergraduate students on machine learning projects</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <p class="timeline-date mono">Jan 2023 – May 2023</p>
+                <h3 class="timeline-title">Graduate Teaching Assistant</h3>
+                <p class="timeline-company">University at Albany, SUNY</p>
+                <div class="timeline-desc">
+                    <ul>
+                        <li>Assisted in teaching Data Structures and Algorithms course</li>
+                        <li>Graded assignments and exams for 100+ students</li>
+                        <li>Provided lab support and one-on-one tutoring sessions</li>
+                        <li>Developed supplementary learning materials and coding exercises</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="notes">
-        <h2>Finance & Investing</h2>
-        <div class="post-item">
-            <span class="post-date">2026-02</span>
-            <a class="post-link" href="#">A-share Small-cap Tech Strategy <span class="tag">Finance</span></a>
-        </div>
-        <div class="post-item">
-            <span class="post-date">2025-08</span>
-            <a class="post-link" href="#">Notes on Machine Learning in Finance <span class="tag">Quant</span></a>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <div class="education-item">
+                <h3 class="education-school">University at Albany, SUNY</h3>
+                <p class="education-degree">Master of Science in Computer Science</p>
+                <div class="education-meta">
+                    <span class="mono">2022 – 2024</span>
+                    <span class="mono">GPA: 3.84/4.0</span>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <h3 class="education-school">Hubei University of Technology</h3>
+                <p class="education-degree">Bachelor of Engineering in Software Engineering</p>
+                <div class="education-meta">
+                    <span class="mono">2016 – 2020</span>
+                </div>
+            </div>
         </div>
     </section>
-</main>
 
-<footer>
-    &copy; 2026 Yuan Yang. Built with pure HTML/CSS.
-</footer>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
 
+            <div class="skill-category">
+                <h3>Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">JAX</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Cloud</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">GCP</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Redis</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Expertise</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">RESTful API</span>
+                    <span class="skill-tag">Microservices</span>
+                    <span class="skill-tag">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Predictive Maintenance System</h3>
+                    <span class="project-year mono">2024</span>
+                </div>
+                <p class="project-desc">ML-powered system for equipment health monitoring using LSTM models to predict failures before they occur, reducing downtime by 35%.</p>
+                <div class="project-tech">
+                    <span>PyTorch</span>
+                    <span>FastAPI</span>
+                    <span>PostgreSQL</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Smart Campus Data Platform</h3>
+                    <span class="project-year mono">2024</span>
+                </div>
+                <p class="project-desc">Real-time data collection and analysis platform for campus IoT devices, processing 10K+ events per minute with actionable insights.</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Spring Boot</span>
+                    <span>MongoDB</span>
+                    <span>Kafka</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">E-commerce Website</h3>
+                    <span class="project-year mono">2023</span>
+                </div>
+                <p class="project-desc">Full-stack e-commerce platform with user authentication, product catalog, shopping cart, and payment integration.</p>
+                <div class="project-tech">
+                    <span>Next.js</span>
+                    <span>Spring Boot</span>
+                    <span>PostgreSQL</span>
+                    <span>Stripe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publications-list">
+            <div class="publication-item">
+                <h3 class="publication-title">Deep Ensemble Learning with Label Smoothing</h3>
+                <p class="publication-meta">
+                    <span class="publication-venue">AAAI 2025</span>
+                </p>
+                <p class="publication-author">Yangyuan Yuan, et al. · First Author</p>
+            </div>
+
+            <div class="publication-item">
+                <h3 class="publication-title">Deep Learning for Traffic Flow Prediction</h3>
+                <p class="publication-meta">
+                    <span class="publication-venue">IEEE ICAIS 2024</span>
+                </p>
+                <p class="publication-author">Yangyuan Yuan, et al. · First Author</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section" id="contact">
+        <h2>Let's Connect</h2>
+        <p class="section-intro" style="margin: 1.5rem auto 0;">
+            I'm always interested in hearing about new opportunities and collaborations.
+        </p>
+        <div class="contact-links">
+            <a href="mailto:yangyuan.yuan@outlook.com" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <path d="M22 6l-10 7L2 6"/>
+                </svg>
+                Email
+            </a>
+            <a href="https://github.com/yangyuan16" target="_blank" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405 1.02 0 2.04.135 3 .405 2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/yangyuan-yuan-4a3b0029a" target="_blank" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Yangyuan Yuan. Built with HTML & CSS.</p>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animation
+        document.querySelectorAll('.timeline-item, .project-card, .publication-item, .skill-category, .education-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
